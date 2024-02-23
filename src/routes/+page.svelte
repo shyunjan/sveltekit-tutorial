@@ -276,6 +276,7 @@
       <h3>Stores</h3>
       <ul>
         <li><a href="/part3/stores/page">page</a></li>
+        <li><a href="/part3/stores/navigating">navigating</a></li>
       </ul>
     </li>
   </ul>
