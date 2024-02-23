@@ -19,4 +19,5 @@
     <li><code>form</code> — the data returned from a 
       <a href="/part3/forms/progressive-enhancement">form action</a></li>
   </ul>
+  <p>See <code>src\routes\part3\stores\+layout.svelte</code>.</p>
 </div>
