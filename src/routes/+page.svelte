@@ -280,6 +280,12 @@
         <li><a href="/part3/stores/updated">updated</a></li>
       </ul>
     </li>
+    <li>
+      <h3>Errors and redirects</h3>
+      <ul>
+        <li><a href="/part3/errors&redirects/basics">Basics</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
