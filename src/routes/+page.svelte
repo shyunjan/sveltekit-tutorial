@@ -290,6 +290,15 @@
       </ul>
     </li>
   </ul>
+  <h2>Part4: Advanced SvelteKit</h2>
+  <ul class="contents">
+    <li>
+      <h3>Hooks</h3>
+      <ul>
+        <li><a href="/part4/hooks/handle">handle</a></li>
+      </ul>
+    </li>
+  </ul>  
 </div>
 
 <style>
