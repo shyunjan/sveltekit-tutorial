@@ -296,6 +296,7 @@
       <h3>Hooks</h3>
       <ul>
         <li><a href="/part4/hooks/handle">handle</a></li>
+        <li><a href="/part4/hooks/RequestEvent">The RequestEvent object</a></li>
       </ul>
     </li>
   </ul>  
