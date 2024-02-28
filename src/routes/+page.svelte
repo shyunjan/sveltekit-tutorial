@@ -286,6 +286,7 @@
         <li><a href="/part3/errors&redirects/basics">Basics</a></li>
         <li><a href="/part3/errors&redirects/basics">Error pages</a></li>
         <li><a href="/part3/errors&redirects/basics">Fallback errors</a></li>
+        <li><a href="/part3/errors&redirects/redirects">Redirects</a></li>
       </ul>
     </li>
   </ul>
