@@ -1,7 +1,8 @@
-import type { Handle } from '@sveltejs/kit';
-type HandleParams = Parameters<Handle>[0];
+// import type { Handle } from '@sveltejs/kit';
+// type HandleParams = Parameters<Handle>[0];
 
-export async function handle({ event, resolve }: HandleParams): Promise<Response> {
+// export async function handle({ event, resolve }: HandleParams): Promise<Response> {
+export async function handle({ event, resolve }) {
   event.locals.answer = 42; // See src\app.d.ts
   switch(event.url.pathname) {
     case '/part4/hooks/handle/ping': return new Response('pong');
