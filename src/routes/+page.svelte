@@ -285,7 +285,7 @@
       <ul>
         <li><a href="/part3/errors&redirects/basics">Basics</a></li>
         <li><a href="/part3/errors&redirects/basics">Error pages</a></li>
-        <li><a href="/part3/errors&redirects/basics">Fallback errors</a></li>
+        <li><a href="/part3/errors&redirects/fallback-errors">Fallback errors</a></li>
         <li><a href="/part3/errors&redirects/redirects">Redirects</a></li>
       </ul>
     </li>
@@ -298,6 +298,7 @@
         <li><a href="/part4/hooks/handle">handle</a></li>
         <li><a href="/part4/hooks/RequestEvent">The RequestEvent object</a></li>
         <li><a href="/part4/hooks/handle-fetch">handleFetch</a></li>
+        <li><a href="/part4/hooks/handle-fetch">handleError</a></li>
       </ul>
     </li>
   </ul>  

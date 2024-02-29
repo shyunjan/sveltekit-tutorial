@@ -22,4 +22,12 @@
     <code>src\routes\part4\hooks\handle-fetch\api-b\+server.ts</code> and
     <code>src\routes\part4\hooks\handle-fetch\+page.server.ts</code>.
   </p>
+  <p>Later, when we cover 
+    <a href="https://learn.svelte.dev/tutorial/universal-load-functions" 
+      target="_blank">universal load functions</a>, we'll see that <code>event.fetch</code> can also
+    be called from the browser. In that scenario, <code>handleFetch</code> is useful if you have
+    requests to a public URL like <code>https://api.yourapp.com</code> from the browser, that should
+    be redirected to an internal URL (bypassing whatever proxies and load balancers sit between the 
+    API server and the public internet) when running on the server.
+  </p>
 </div>
