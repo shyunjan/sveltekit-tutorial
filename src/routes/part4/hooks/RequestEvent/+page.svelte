@@ -50,7 +50,5 @@
       object representing the current request
     </li>
   </ul>
-  <p>See <code>src\hooks.server.ts</code> and 
-    <code>src\routes\part4\hooks\RequestEvent\+page.server.ts</code>.
-  </p>
+  <p>See <code>src\hooks.server.ts</code> and <code>.\+page.server.ts</code>.</p>
 </div>

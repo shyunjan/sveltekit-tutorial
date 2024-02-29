@@ -297,8 +297,8 @@
       <ul>
         <li><a href="/part4/hooks/handle">handle</a></li>
         <li><a href="/part4/hooks/RequestEvent">The RequestEvent object</a></li>
-        <li><a href="/part4/hooks/handle-fetch">handleFetch</a></li>
-        <li><a href="/part4/hooks/handle-fetch">handleError</a></li>
+        <li><a href="/part4/hooks/handleFetch">handleFetch</a></li>
+        <li><a href="/part4/hooks/handleError">handleError</a></li>
       </ul>
     </li>
   </ul>  

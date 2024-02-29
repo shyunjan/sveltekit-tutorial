@@ -17,10 +17,8 @@
     <li>internal requests (e.g. for <code>+server.js</code> routes) go directly to the 
       handler function when running on the server, without the overhead of an HTTP call</li>
   </ul>
-  <p>See <code>src\hooks.server.ts</code>,
-    <code>src\routes\part4\hooks\handle-fetch\api-a\+server.ts</code>,
-    <code>src\routes\part4\hooks\handle-fetch\api-b\+server.ts</code> and
-    <code>src\routes\part4\hooks\handle-fetch\+page.server.ts</code>.
+  <p>See <code>.\+page.server.ts</code>, <code>src\hooks.server.ts</code>,
+    <code>.\api-a\+server.ts</code> and <code>.\api-b\+server.ts</code>.
   </p>
   <p>Later, when we cover 
     <a href="https://learn.svelte.dev/tutorial/universal-load-functions" 

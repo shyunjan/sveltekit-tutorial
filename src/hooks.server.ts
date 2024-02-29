@@ -18,7 +18,7 @@ export async function handle({ event, resolve }) {
 
 export async function handleFetch({event, request, fetch}) {
   const url = new URL(request.url);
-  if (url.pathname === '/part4/hooks/handle-fetch/api') {
-    return await fetch('/part4/hooks/handle-fetch/api-b');
+  if (url.pathname === '/part4/hooks/handleFetch/api') {
+    return await fetch('/part4/hooks/handleFetch/api-b');
   }
 }
