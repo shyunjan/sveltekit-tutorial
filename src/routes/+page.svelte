@@ -301,6 +301,12 @@
         <li><a href="/part4/hooks/handleError">handleError</a></li>
       </ul>
     </li>
+    <li>
+      <h3>Page options</h3>
+      <ul>
+        <li><a href="/part4/page-options/basics">Basics</a></li>
+      </ul>
+    </li>
   </ul>  
 </div>
 

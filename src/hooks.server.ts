@@ -28,7 +28,7 @@ export function handleError({ event, error }: { event: RequestEvent, error: Erro
   console.error(error.stack);
 
   return {
-    message: 'everything is fine',
-    code: 'JEREMYBEARIMY'
+    message: 'Unexpected Error',
+    code: 'A code that is defined by developer'
   }
 }
