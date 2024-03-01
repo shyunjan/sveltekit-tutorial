@@ -305,6 +305,7 @@
       <h3>Page options</h3>
       <ul>
         <li><a href="/part4/page-options/basics">Basics</a></li>
+        <li><a href="/part4/page-options/ssr">ssr</a></li>
       </ul>
     </li>
   </ul>  

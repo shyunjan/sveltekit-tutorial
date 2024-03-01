@@ -3,7 +3,7 @@
     <a href="https://learn.svelte.dev/tutorial/page-data" target="_blank">loading data</a>, 
     we saw how you can export load functions from <code>+page.js</code>, 
     <code>+page.server.js</code>, <code>+layout.js</code> and <code>+layout.server.js</code> files.
-    We can also export various page options from these modules:
+    We can also export various <b>page options</b> from these modules:
   </p>
   <ul>
     <li><code>ssr</code> — whether or not pages should be server-rendered</li>
