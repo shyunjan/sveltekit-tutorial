@@ -8,5 +8,5 @@
     <li><code>307</code> — for temporary redirects
     <li><code>308</code> — for permanent redirects
   </ul>
-  <p>See <code>src\routes\part3\errors&redirects\redirects\from\+page.server.ts</code>.</p>
+  <p>See <code>.\from\+page.server.ts</code>.</p>
 </div>
