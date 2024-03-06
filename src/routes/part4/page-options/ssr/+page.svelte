@@ -1,7 +1,6 @@
 <h1>{window.innerWidth}x{window.innerHeight}</h1>
 <div class="tutorial">
-  <p>
-    Server-side rendering (SSR) is the process of generating HTML on the server, and is what
+  <p>Server-side rendering (SSR) is the process of generating HTML on the server, and is what
     SvelteKit does by default. It's important for performance and
     <a href="https://kryogenix.org/code/browser/everyonehasjs.html" target="_blank">resilience</a>,
     and is very beneficial for search engine optimization (SEO) — while some search engines can
@@ -12,7 +11,7 @@
     able to access browser globals like window immediately. If you can, you should change those
     components so that they can render on the server, but if you can't then you can disable SSR:
   </p>
-  <p>See .\+page.svelte</p>
+  <p>See .\+page.server.ts</p>
   <div class="code-block">
     <pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> ssr = <span class="token boolean">false</span>;</code></pre>
   </div>
