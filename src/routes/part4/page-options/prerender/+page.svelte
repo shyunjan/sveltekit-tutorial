@@ -33,7 +33,7 @@
     specified in the
     <a href="https://kit.svelte.dev/docs/configuration#prerender"
        target="_blank">prerender.entries</a> configuration or can be reached by following links from
-    pages that are in prerender.entries.
+    pages that are in <code>prerender.entries</code>.
   </p>
   <p class="note">
     <span>NOTE</span>

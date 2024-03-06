@@ -308,6 +308,7 @@
         <li><a href="/part4/page-options/ssr">ssr</a></li>
         <li><a href="/part4/page-options/csr">csr</a></li>
         <li><a href="/part4/page-options/prerender">prerender</a></li>
+        <li><a href="/part4/page-options/trailingSlash">trailingSlash</a></li>
       </ul>
     </li>
   </ul>  
