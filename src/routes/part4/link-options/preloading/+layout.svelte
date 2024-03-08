@@ -24,9 +24,9 @@
 </script>
 
 <nav>
-  <a href="/">home</a>
-  <a href="/slow-a">slow-a</a>
-  <a href="/slow-b">slow-b</a>
+  <a href="/part4/link-options/preloading">Preloading home</a>
+  <a href="/part4/link-options/preloading/slow-a" data-sveltekit-preload-data>slow-a</a>
+  <a href="/part4/link-options/preloading/slow-b">slow-b</a>
 </nav>
 
 <slot />

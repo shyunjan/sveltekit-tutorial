@@ -1,3 +1,3 @@
 export async function load() {
-  await new Promise(fulfil => { setTimeout(fulfil, 1000); });
+  await new Promise(fulfil => { setTimeout(fulfil, 2000); });
 }

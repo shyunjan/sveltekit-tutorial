@@ -362,6 +362,17 @@ code {
   overflow-x: auto;
 }
 
+.highlight.add {
+  --color:#00ff002e
+}
+
+:where(.code-block pre) .highlight {
+  --color:#dcdc0033;
+  background:var(--color);
+  outline:2px solid var(--color);
+  border-radius:2px
+}
+
 .error {
   color: red;
 }

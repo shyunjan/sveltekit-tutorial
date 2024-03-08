@@ -315,6 +315,7 @@
       <h3>Link options</h3>
       <ul>
         <li><a href="/part4/link-options/preloading">Preloading</a></li>
+        <li><a href="/part4/link-options/reloading">Reloading the page</a></li>
       </ul>
     </li>
   </ul>  
