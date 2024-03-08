@@ -6,7 +6,7 @@
   // });
 
   function changeStyle(node: HTMLElement) {
-    node.style.overflow = "visible";
+    node.style.overflow = 'visible';
   }
 </script>
 
@@ -318,7 +318,13 @@
         <li><a href="/part4/link-options/reloading">Reloading the page</a></li>
       </ul>
     </li>
-  </ul>  
+    <li>
+      <h3>Advanced routing</h3>
+      <ul>
+        <li><a href="/part4/advanced-routing/optional-parameters">Optional parameters</a></li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <style>
