@@ -15,8 +15,8 @@
     by building and deploying a new version of the application.
   </p>
   <p>To prerender a page, set <code>prerender</code> to <code>true</code>:</p>
-  <p>See .\+page.server.ts</p>
   <div class="code-block">
+    <p>See .\+page.server.ts</p>
     <pre class="language-javascript"><code
         ><span class="token keyword">export</span> <span class="token keyword">const</span
         > prerender = <span class="token boolean">true</span>;</code

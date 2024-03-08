@@ -311,6 +311,12 @@
         <li><a href="/part4/page-options/trailingSlash">trailingSlash</a></li>
       </ul>
     </li>
+    <li>
+      <h3>Link options</h3>
+      <ul>
+        <li><a href="/part4/link-options/preloading">Preloading</a></li>
+      </ul>
+    </li>
   </ul>  
 </div>
 
