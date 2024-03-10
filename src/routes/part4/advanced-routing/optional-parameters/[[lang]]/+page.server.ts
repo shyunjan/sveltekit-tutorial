@@ -6,6 +6,6 @@ const greetings: { [K: string]: string } = {
 
 export function load({ params }) {
   return {
-    greeting: greetings[params.lang]
+    greeting: greetings[params.lang ?? 'en']
   };
 }

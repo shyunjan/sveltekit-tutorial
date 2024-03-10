@@ -34,7 +34,7 @@
   </p>
   <div class="code-block">
     <p>See .\+layout.svelte</p>
-    <pre class="language-javascript"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="highlight add"><span class="token attr-name">data-sveltekit-reload</span></span><span class="token punctuation">&gt;</span></span> ... <span class="token tag"><span class="token punctuation">&lt;/</span>nav<span class="token punctuation">&gt;</span></span></pre>
+    <pre class="language-javascript"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="highlight add"><span class="token attr-name">data-sveltekit-reload</span></span><span class="token punctuation">&gt;</span></span> ... <span class="token tag"><span class="token punctuation">&lt;/</span>nav<span class="token punctuation">&gt;</span></span></code></pre>
   </div>
   <p>For more information on available link options and their values, consult the
     <a href="https://kit.svelte.dev/docs/link-options" target="_blank">link options
