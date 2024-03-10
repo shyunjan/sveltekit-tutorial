@@ -322,6 +322,7 @@
       <h3>Advanced routing</h3>
       <ul>
         <li><a href="/part4/advanced-routing/optional-parameters">Optional parameters</a></li>
+        <li><a href="/part4/advanced-routing/rest-parameters">Rest parameters</a></li>
       </ul>
     </li>
   </ul>
