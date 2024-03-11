@@ -409,9 +409,18 @@ blockquote :last-child {
   border-radius:var(--sk-border-radius);
   box-shadow:inset 1px 1px 3px #0000001a
 }
-
 :where(.code-block) p {
   margin: 0.5rem 0.1rem;
+}
+:where(pre) code {
+  white-space: inherit;
+  background:0 0;
+  width:100%;
+  margin:0;
+  padding:0;
+  display:block;
+  top:0;
+  overflow-x:auto
 }
 
 .language-javascript {
@@ -420,27 +429,11 @@ blockquote :last-child {
   box-shadow: inset 1px 1px 3px #0000001a;
 }
 :where(.language-javascript) code {
-  white-space: inherit;
   color: var(--sk-text-2);
-  background: 0 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  top: 0;
-  overflow-x: auto;
 }
 
 :where(.language-diff) code {
-  white-space: inherit;
   color:#fff6;
-  background: 0 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  top: 0;
-  overflow-x: auto;
 }
 .language-diff .inserted,
 .language-diff .deleted {
@@ -466,6 +459,9 @@ blockquote :last-child {
 }
 .language-diff .deleted:before {
   content:"-"
+}
+:where(.language-svelte) code {
+  color: var(--sk-text-2);
 }
 
 .highlight.add {
