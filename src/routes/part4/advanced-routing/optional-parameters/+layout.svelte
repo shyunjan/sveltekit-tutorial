@@ -14,7 +14,7 @@
   </p>
   <p>To do that, we use double brackets. Rename the [lang] directory to [[lang]].</p>
   <div class="code-block">
-    <p>See ./[[lang]]/+page.server.ts</p>
+    <p>See <code>./[[lang]]/+page.server.ts</code></p>
     <pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> params <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
     <span class="token literal-property property">greeting</span><span class="token operator">:</span> greetings<span class="token punctuation">[</span>params<span class="token punctuation">.</span>lang <span class="highlight add"><span class="token operator">??</span> <span class="token string">'en'</span></span><span class="token punctuation">]</span>

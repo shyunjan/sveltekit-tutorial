@@ -16,7 +16,7 @@
   </p>
   <p>To prerender a page, set <code>prerender</code> to <code>true</code>:</p>
   <div class="code-block">
-    <p>See .\+page.server.ts</p>
+    <p>See <code>.\+page.server.ts</code></p>
     <pre class="language-javascript"><code
         ><span class="token keyword">export</span> <span class="token keyword">const</span
         > prerender = <span class="token boolean">true</span>;</code

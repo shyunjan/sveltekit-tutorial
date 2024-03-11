@@ -23,12 +23,12 @@
     <code>trailingSlash</code> option accordingly:
   </p>
   <div class="code-block">
-    <p>See .\always\+page.server.ts</p>
+    <p>See <code>.\always\+page.server.ts</code></p>
     <pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> trailingSlash = <span class="token boolean">always</span>;</code></pre>
   </div>
   <p>To accommodate both cases (this is not recommended!), use <code>'ignore'</code>:</p>
   <div class="code-block">
-    <p>See .\ignore\+page.server.ts </p>
+    <p>See <code>.\ignore\+page.server.ts</code></p>
     <pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> trailingSlash = <span class="token boolean">ignore</span>;</code></pre>
   </div>
   <p>The default value is <code>'never'.</code></p>

@@ -33,7 +33,7 @@
     contains links:
   </p>
   <div class="code-block">
-    <p>See .\+layout.svelte</p>
+    <p>See <code>.\+layout.svelte</code></p>
     <pre class="language-javascript"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="highlight add"><span class="token attr-name">data-sveltekit-reload</span></span><span class="token punctuation">&gt;</span></span> ... <span class="token tag"><span class="token punctuation">&lt;/</span>nav<span class="token punctuation">&gt;</span></span></code></pre>
   </div>
   <p>For more information on available link options and their values, consult the

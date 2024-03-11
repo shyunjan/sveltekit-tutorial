@@ -21,7 +21,7 @@
   </p>
   <p>As with <code>ssr</code>, you can disable client-side rendering altogether:</p>
   <div class="code-block">
-    <p>See .\+page.server.ts</p>
+    <p>See <code>.\+page.server.ts</code></p>
     <pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> csr = <span class="token boolean">false</span>;</code></pre>
   </div>
   <p>This means that no JavaScript is served to the client, but it also means that your components
