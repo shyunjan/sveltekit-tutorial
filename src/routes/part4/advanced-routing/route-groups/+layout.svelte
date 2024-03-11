@@ -10,8 +10,8 @@
 <div class="tutorial">
   <p>Sometimes it's useful to use layouts without affecting the route — for example, you might need
     your <code>/app</code> and <code>/account</code> routes to be behind authentication, while your
-    <code>/about</code> page is open to the world. We can do this with a route group, which is a
-    directory in parentheses.
+    <code>/about</code> page is open to the world. We can do this with a <em>route group</em>, which
+    is a directory in parentheses.
   </p>
   <p>Create an <code>(authed)</code> group by
     renaming <code>account</code> to <code>(authed)/account</code> then

@@ -328,6 +328,12 @@
         <li><a href="/part4/advanced-routing/breaking-out-of-layouts">Breaking out of layouts</a></li>
       </ul>
     </li>
+    <li>
+      <h3>Advanced loading</h3>
+      <ul>
+        <li><a href="/part4/advanced-loading/universal-load-functions">Universal load functions</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
