@@ -23,7 +23,7 @@
     color: white;
     white-space: nowrap;
   }
-  
+
   nav div {
     display: flex;
   }
@@ -77,7 +77,7 @@
   </div>
   <p>Read the
     <a href="https://kit.svelte.dev/docs/load#universal-vs-server" target="_blank">documentation</a>
-    to learn more about the distinction between server load functions and universal load functions,
-    and when to use which.
+    to learn more about the distinction between server load functions and universal
+    <code>load</code> functions, and when to use which.
   </p>
 </div>
