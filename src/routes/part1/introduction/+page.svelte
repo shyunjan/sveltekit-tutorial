@@ -7,7 +7,7 @@
 
 <h1>Hello {name.toUpperCase()}!</h1>
 
-<img {src} alt="A man dances."/>
+<img {src} alt="{name} dances."/>
 
 <p>This is a paragraph.</p>
 <p>{@html string}</p>
