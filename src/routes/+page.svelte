@@ -336,6 +336,7 @@
         <li><a href="/part4/advanced-loading/using-parent-data">Using parent data</a></li>
         <li><a href="/part4/advanced-loading/invalidation">Invalidation</a></li>
         <li><a href="/part4/advanced-loading/custom-dependencies">Custom dependencies</a></li>
+        <li><a href="/part4/advanced-loading/invalidateAll">invalidateAll</a></li>
       </ul>
     </li>
   </ul>
