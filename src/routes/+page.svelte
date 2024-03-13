@@ -334,6 +334,7 @@
         <li><a href="/part4/advanced-loading/universal-load-functions">Universal load functions</a></li>
         <li><a href="/part4/advanced-loading/using-both-load-functions">Using both load functions</a></li>
         <li><a href="/part4/advanced-loading/using-parent-data">Using parent data</a></li>
+        <li><a href="/part4/advanced-loading/invalidation">Invalidation</a></li>
       </ul>
     </li>
   </ul>
