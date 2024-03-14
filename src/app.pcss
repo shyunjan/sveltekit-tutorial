@@ -12,6 +12,7 @@ body {
   --sk-back-1:#1a1a1a;
   --sk-back-4:#383838;
   --sk-back-5:#666;
+  --sk-back-6:#c6c6c6;
   --sk-back-translucent:#ffffff1a;
   --sk-theme-1-hsl:12,94%,62%;
   --sk-theme-2-hsl:240,8%,44%;
@@ -69,7 +70,14 @@ h5,
 h6 {
   font-weight: normal;
   font-variant-numeric: tabular-nums;
-  line-height: 1.1;
+  line-height: 1.5;
+}
+h2 {
+  border-bottom:1px solid var(--sk-back-6);
+  margin-top:7rem
+}
+h3 {
+  margin-top:5rem
 }
 
 :is(h1, h2, h3, h4, h5, h6, p) {
@@ -230,7 +238,7 @@ code {
   white-space: inherit;
   background: var(--bg-2);
   /* background: var(--sk-back-4); */
-  font-family: var(--font-mono);
+  font-family: var(--sk--font-mono);
   font-size: 0.9em;
   padding: 0.15rem 0.3rem;
   border-radius: var(--border-radius);

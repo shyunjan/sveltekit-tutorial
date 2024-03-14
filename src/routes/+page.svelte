@@ -339,6 +339,12 @@
         <li><a href="/part4/advanced-loading/invalidateAll">invalidateAll</a></li>
       </ul>
     </li>
+    <li>
+      <h3>Environment variables</h3>
+      <ul>
+        <li><a href="/part4/environment-variables/$env-static-private">$env/static/private</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
