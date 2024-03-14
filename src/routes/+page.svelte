@@ -345,6 +345,7 @@
         <li><a href="/part4/environment-variables/$env-static-private">$env/static/private</a></li>
         <li><a href="/part4/environment-variables/$env-dynamic-private">$env/dynamic/private</a></li>
         <li><a href="/part4/environment-variables/$env-static-public">$env/static/public</a></li>
+        <li><a href="/part4/environment-variables/$env-dynamic-public">$env/dynamic/public</a></li>
       </ul>
     </li>
   </ul>
