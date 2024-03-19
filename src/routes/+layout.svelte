@@ -1,5 +1,6 @@
 <script>
   import '../app.pcss';
+  // console.debug(`process.env.NODE_ENV = ${process.env.NODE_ENV}`);
 </script>
 
 <nav>
