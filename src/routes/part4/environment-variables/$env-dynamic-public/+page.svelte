@@ -1,5 +1,5 @@
 <script>
-  // import { env } from '$env/dynamic/public';
+  import { env } from '$env/dynamic/public';
 </script>
 
 <!-- <main style:background={env.PUBLIC_THEME_BACKGROUND} style:color={env.PUBLIC_THEME_FOREGROUND}>
