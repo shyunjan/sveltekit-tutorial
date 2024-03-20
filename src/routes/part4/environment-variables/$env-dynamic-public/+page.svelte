@@ -2,9 +2,9 @@
   import { env } from '$env/dynamic/public';
 </script>
 
-<main style:background={env.PUBLIC_THEME_BACKGROUND} style:color={env.PUBLIC_THEME_FOREGROUND}>
+<!-- <main style:background={env.PUBLIC_THEME_BACKGROUND} style:color={env.PUBLIC_THEME_FOREGROUND}>
   {env.PUBLIC_THEME_FOREGROUND} on {env.PUBLIC_THEME_BACKGROUND}
-</main>
+</main> -->
 
 <style>
   main {
