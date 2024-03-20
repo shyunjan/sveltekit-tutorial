@@ -16,7 +16,7 @@ const config = {
     adapter: 
       // adapter(), // as using @sveltejs/adapter-auto
       adapter({
-        runtime: 'edge',
+        runtime: 'nodejs18.x',
         // maxDuration: // Defaults to 10 seconds for Hobby accounts, 15 for Pro and 900 for Enterprise
       }),
 
