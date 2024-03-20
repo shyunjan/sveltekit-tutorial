@@ -1,5 +1,5 @@
 import { redirect, fail } from '@sveltejs/kit';
-import { env } from '$env/dynamic/private';
+// import { env } from '$env/dynamic/private';
 
 export function load({ cookies }) {
   if (cookies.get('allowed')) {
@@ -9,18 +9,18 @@ export function load({ cookies }) {
 
 export const actions = {
   default: async ({ request, cookies }) => {
-    const data = await request.formData();
+    // const data = await request.formData();
 
-    if (data.get('passphrase') === env.PASSPHRASE) {
-      cookies.set('allowed', 'true', {
-        path: '/part4/environment-variables'
-      });
+    // if (data.get('passphrase') === env.PASSPHRASE) {
+    //   cookies.set('allowed', 'true', {
+    //     path: '/part4/environment-variables'
+    //   });
 
-      throw redirect(303, '/part4/environment-variables/$env-dynamic-private/welcome');
-    }
+    //   throw redirect(303, '/part4/environment-variables/$env-dynamic-private/welcome');
+    // }
 
-    return fail(403, {
-      incorrect: true
-    });
+    // return fail(403, {
+    //   incorrect: true
+    // });
   }
 };
