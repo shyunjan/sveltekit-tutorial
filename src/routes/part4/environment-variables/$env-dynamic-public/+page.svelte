@@ -4,7 +4,7 @@
   export let data;
 </script>
 
-<main style:background={data?.env.PUBLIC_THEME_BACKGROUND} style:color={data.env.PUBLIC_THEME_FOREGROUND}>
+<main style:background={data.env.PUBLIC_THEME_BACKGROUND} style:color={data.env.PUBLIC_THEME_FOREGROUND}>
   {data.env.PUBLIC_THEME_FOREGROUND} on {data.env.PUBLIC_THEME_BACKGROUND}
 </main>
 
