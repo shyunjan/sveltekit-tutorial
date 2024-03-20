@@ -1,13 +1,13 @@
 <script>
-  // import { 
-  //   PUBLIC_THEME_BACKGROUND,
-  //   PUBLIC_THEME_FOREGROUND
-  // } from '$env/static/public';
+  import { 
+    PUBLIC_THEME_BACKGROUND,
+    PUBLIC_THEME_FOREGROUND
+  } from '$env/static/public';
 </script>
 
-<!-- <main style:background={PUBLIC_THEME_BACKGROUND} style:color={PUBLIC_THEME_FOREGROUND}>
+<main style:background={PUBLIC_THEME_BACKGROUND} style:color={PUBLIC_THEME_FOREGROUND}>
   {PUBLIC_THEME_FOREGROUND} on {PUBLIC_THEME_BACKGROUND}
-</main> -->
+</main>
 
 <style>
   main {
