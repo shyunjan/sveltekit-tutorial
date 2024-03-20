@@ -1,12 +1,12 @@
 <script>
-  import { env } from '$env/dynamic/public';
+  // import { env } from '$env/dynamic/public';
 </script>
 
 <!-- <main style:background={env.PUBLIC_THEME_BACKGROUND} style:color={env.PUBLIC_THEME_FOREGROUND}>
   {env.PUBLIC_THEME_FOREGROUND} on {env.PUBLIC_THEME_BACKGROUND}
 </main> -->
 
-<style>
+<!-- <style>
   main {
     position: fixed;
     display: flex;
@@ -18,9 +18,9 @@
     height: 100%;
     font-size: 10vmin;
   }
-</style>
+</style> -->
 
-<div class="tutorial">
+<!-- <div class="tutorial">
   <p>As with
     <a href="https://learn.svelte.dev/tutorial/env-static-private" target="_blank"
     >private environment variables</a>, it's preferable to use static values if possible, but if
@@ -39,4 +39,4 @@
   <span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="highlight add">env<span class="token punctuation">.</span></span><span class="token constant">PUBLIC_THEME_FOREGROUND</span><span class="token punctuation">&#125;</span></span> on <span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="highlight add">env<span class="token punctuation">.</span></span><span class="token constant">PUBLIC_THEME_BACKGROUND</span><span class="token punctuation">&#125;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span></code></pre>
   </div>
-</div>
+</div> -->
