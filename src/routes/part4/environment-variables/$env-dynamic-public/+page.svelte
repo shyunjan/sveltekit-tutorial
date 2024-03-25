@@ -1,6 +1,6 @@
 <script>
   // import { env } from '$env/dynamic/public';
-  // 위 방식은 dev 모드에서는 작동하지만 vercel에 배포하고 빌드했을 경우에는 작동하지 않아서 ./+page.server.ts와 함께 아래 방식을 사용한다.
+  // 위 방식은 dev 모드에서는 작동하지만 Vercel에 배포하고 빌드했을 경우에는 작동하지 않아서 ./+page.server.ts와 함께 아래 방식을 사용한다.
   export let data;
 </script>
 
