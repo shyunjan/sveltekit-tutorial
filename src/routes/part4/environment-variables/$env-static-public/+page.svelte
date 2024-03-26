@@ -23,7 +23,7 @@
   }
 </style>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Some environment variables can be safely exposed to the browser. These are distinguished from
     private environment variables with a <code>PUBLIC_</code> prefix.
   </p>

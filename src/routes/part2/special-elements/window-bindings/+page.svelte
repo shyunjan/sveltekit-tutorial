@@ -6,7 +6,7 @@
 
 <span>depth: {y}px</span>
 
-<div class="tutorial" style="display: inline; position: fixed; top: 75%; color: coral;">
+<div class="mt-16 mb-8 relative" style="display: inline; position: fixed; top: 75%; color: coral;">
   <p>The list of properties you can bind to is as follows:</p>
   <ul>
     <li><code>innerWidth</code></li>

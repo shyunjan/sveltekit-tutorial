@@ -15,10 +15,11 @@
 <div class="flex flex-col justify-center max-w-2xl max-h-full my-0 mx-auto gap-2">
   <h1 class="font-bold">Welcome to SvelteKit</h1>
   <div class="mb-6 pl-1">
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    <p>Visit <a href="https://kit.svelte.dev" target="_blank">kit.svelte.dev</a> to read the documentation</p>
+    <p>Source codes - <a href="https://github.com/shyunjan/sveltekit-tutorial" target="_blank">github</a></p>
   </div>
   <h2 class="mb-5">Part1: Basic Svelte</h2>
-  <ul class="my-4">
+  <ul>
     <li class="mt-0 mr-0 mb-3 ml-10">
       <h3>Introduction</h3>
       <ul>
@@ -103,9 +104,8 @@
       </ul>
     </li>
   </ul>
-  <br />
   <h2 class="mb-5">Part2: Advanced Svelte</h2>
-  <ul class="my-4">
+  <ul>
     <li class="mt-0 mr-0 mb-3 ml-10">
       <h3>Motion</h3>
       <ul>
@@ -216,9 +216,8 @@
       </ul>
     </li>
   </ul>
-  <br />
   <h2 class="mb-5">Part3: Basic SvelteKit</h2>
-  <ul class="my-4">
+  <ul>
     <li class="mt-0 mr-0 mb-3 ml-10">
       <h3>Introduction</h3>
       <ul>
@@ -290,7 +289,7 @@
     </li>
   </ul>
   <h2 class="mb-5">Part4: Advanced SvelteKit</h2>
-  <ul class="my-4">
+  <ul>
     <li class="mt-0 mr-0 mb-3 ml-10">
       <h3>Hooks</h3>
       <ul>

@@ -1,5 +1,5 @@
 <h1>Stores &gt; navigating</h1>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>
     The <code>navigating</code> store represents the current navigation. When a navigation starts —
     because of a link click, or a back/forward navigation, or a programmatic <code>goto</code> — 

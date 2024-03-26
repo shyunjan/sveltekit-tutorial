@@ -1,5 +1,5 @@
 <h1>{window.innerWidth}x{window.innerHeight}</h1>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Server-side rendering (SSR) is the process of generating HTML on the server, and is what
     SvelteKit does by default. It's important for performance and
     <a href="https://kryogenix.org/code/browser/everyonehasjs.html" target="_blank">resilience</a>,

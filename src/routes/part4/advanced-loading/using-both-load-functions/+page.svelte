@@ -4,7 +4,7 @@
 
 <svelte:component this={data.component} message={data.message} />
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Occasionally, you might need to use a server load function and a universal load function
     together. For example, you might need to return data from the server, but also return a
     value that can't be serialized as server data.

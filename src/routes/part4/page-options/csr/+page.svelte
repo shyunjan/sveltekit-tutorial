@@ -14,7 +14,7 @@
   Clicks: {count}
 </button>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Client-side rendering is what makes the page interactive — such as incrementing the counter
     when you click the button in this app — and enables SvelteKit to update the page upon
     navigation without a full-page reload.

@@ -1,5 +1,5 @@
 <h1>Errors and redirects &gt; Basics</h1>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>
     See <code>.\+error.svelte</code>, <code>.\expected\+page.server.ts</code>,
     <code>.\expected\+error.svelte</code> and <code>.\unexpected\+page.server.ts</code>.

@@ -24,7 +24,7 @@
 {/if}
 <br/>
 <br/>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p class="note">
     <span>NOTE</span>
       In Svelte 3, transitions were global by default and you had to use the <code>|local</code> modifier to make them local.

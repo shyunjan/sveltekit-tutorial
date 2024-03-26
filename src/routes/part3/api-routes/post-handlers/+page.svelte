@@ -69,7 +69,7 @@
     {/each}
   </ul>
 </div>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p class="note">
     <span>NOTE</span>
     You should only mutate <code>data</code> in such a way that you'd get the same result by reloading the page.

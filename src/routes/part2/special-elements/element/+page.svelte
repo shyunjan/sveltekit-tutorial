@@ -13,6 +13,6 @@
   I'm a <code>&lt;{selected}&gt;</code> element
 </svelte:element>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   The <code>this</code> value can be any string, or a falsy value — if it's falsy, no element is rendered.
 </div>

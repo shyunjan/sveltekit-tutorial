@@ -12,7 +12,7 @@
 
 <slot />
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>When the user navigates from one page to another, SvelteKit calls your <code>load</code>
     functions, but only if it thinks something has changed.
   </p>

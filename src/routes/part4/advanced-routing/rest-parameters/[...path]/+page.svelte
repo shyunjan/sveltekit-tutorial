@@ -19,7 +19,7 @@
   <p><a href={`/part4/advanced-routing/rest-parameters/${next}`}>{words[depth] ?? '?'}</a></p>
 </div>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>To match an unknown number of path segments, use a <code>[...rest]</code> parameter, so named
     for its resemblance to
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters"

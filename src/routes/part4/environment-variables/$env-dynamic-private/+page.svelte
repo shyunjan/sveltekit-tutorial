@@ -19,7 +19,7 @@
   }
 </style>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>If you need to read the values of environment variables when the app runs, as opposed to when
     the app is built, you can use <code>$env/dynamic/private</code> instead of
     <code>$env/static/private</code>:

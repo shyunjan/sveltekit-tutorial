@@ -1,5 +1,5 @@
 <h1>Stores &gt; updated</h1>
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>
     The <code>updated</code> store contains <code>true</code> or <code>false</code> depending on 
     whether a new version of the app has been deployed since the page was first opened. For this 

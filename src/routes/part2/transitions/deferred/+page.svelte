@@ -33,7 +33,7 @@
     <TodoList store={todos} done={true} />
   </div>
 
-  <div class="tutorial" style="grid-column: 1/3;">
+  <div class="mt-16 mb-8 relative" style="grid-column: 1/3;">
     <p class="note">
       <span>NOTE</span>
       <code>duration</code> can also be a <code>d =&gt; milliseconds function</code>, where <code>d</code> is

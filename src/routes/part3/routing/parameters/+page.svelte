@@ -10,7 +10,7 @@
   {/each}
 </ul>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p class="note">
     <span>NOTE</span>
     Multiple route parameters can appear within one URL segment, as long as they are separated by at

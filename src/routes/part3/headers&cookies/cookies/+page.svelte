@@ -4,7 +4,7 @@
 
 <h1>Hello {data.visited ? 'friend' : 'stranger'}!</h1>
 
-<div class="tutorial"  style="--pos: 33%">
+<div class="mt-16 mb-8 relative"  style="--pos: 33%">
   <p>
     To set a cookie, use <code>cookies.set(name, value, options)</code>. It's strongly recommended
     that you explicitly configure the <code>path</code> when setting a cookie, since browsers' default

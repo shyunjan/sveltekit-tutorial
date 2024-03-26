@@ -11,7 +11,7 @@
 
   <button on:click={stopAll}>Stop All</button>
 
-  <div class="tutorial">
+  <div class="mt-16 mb-8 relative">
     <p>The complete set of bindings for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> is as follows — seven readonly bindings...</p>
     <ul>
       <li>duration (readonly) — the total duration, in seconds</li>

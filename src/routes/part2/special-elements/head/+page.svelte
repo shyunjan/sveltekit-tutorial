@@ -6,7 +6,7 @@
 <svelte:head>
   <link rel="stylesheet" href="/stylesheets/{selected}.css" />
 </svelte:head>
-<div class="tutorial" style="display: inline; position: fixed; top: 0%; color: coral;">
+<div class="mt-16 mb-8 relative" style="display: inline; position: fixed; top: 0%; color: coral;">
   <p class="note">
     <span>NOTE</span>
     In server-side rendering (SSR) mode, contents of <code>&lt;svelte:head&gt;</code> are returned separately from the rest of your HTML.

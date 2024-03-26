@@ -35,10 +35,7 @@
     font-variant-numeric: tabular-nums;
   }
   :is(h1, h2, h3, h4, h5, h6, p) {
-    margin: 1rem 0.1rem;
-  }
-  label {
-    margin: 0.5rem 0.1rem;
+    margin: theme(margin.4) theme(margin[0.4]);
   }
   :is(h1, h2, h3, h4, h5, h6, p, label):first-child {
     margin-top: 0;
@@ -52,14 +49,53 @@
   h2 {
     font-size: theme(fontSize.2xl); 
     border-bottom:1px solid theme(colors.silver.300);
+    
   }
   h3 {
     font-size: theme(fontSize.xl); 
     margin-bottom: theme(margin.4);
   }
-
+  
   ul {
     display: contents;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: theme(gap.4);
+    align-items: baseline;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: theme(gap.2);
+    margin: theme(margin.2) theme(margin[0.4]);
+  }
+  label input {
+    margin: 0;
+  }
+  button,
+  input,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  input,
+  textarea {
+    background: white;
+    color: inherit;
+  }
+  input,
+  textarea,
+  select {
+    border: theme(borderWidth.DEFAULT) solid theme(borderColor.mystic.200);
+    border-radius: theme(borderRadius.md);
+    box-sizing: border-box;
+    padding: theme(padding.2);
+  }
+  input {
+    line-height: theme(lineHeight.tight);
   }
 }
 

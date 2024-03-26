@@ -9,7 +9,7 @@
 
 <slot />
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Two URLs like <code>/foo</code> and <code>/foo/</code> might look the same, but they're
     actually different. A relative URL like <code>./bar</code> will resolve to <code>/bar</code> in
     the first case and <code>/foo/bar</code> in the second, and search engines will treat them as

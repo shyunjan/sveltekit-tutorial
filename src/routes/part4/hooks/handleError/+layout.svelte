@@ -5,7 +5,7 @@
 </nav>
 
 <slot />
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>See <code>.\the-bad-place\+page.server.ts</code>, <code>src\hooks.server.ts</code>, 
     <code>src\app.d.ts</code> and <code>src\routes\+error.svelte</code>.
   </p>

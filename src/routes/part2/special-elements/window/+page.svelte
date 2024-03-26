@@ -10,7 +10,7 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="tutorial" style="display: inline; position: absolute;">
+<div class="mt-16 mb-8 relative" style="display: inline; position: absolute;">
   <p class="note">
     <span>NOTE</span>
     As with DOM elements, you can add <a href="https://learn.svelte.dev/tutorial/event-modifiers" target="_blank">event modifiers</a> like preventDefault.

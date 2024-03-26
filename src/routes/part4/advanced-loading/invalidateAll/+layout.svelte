@@ -12,7 +12,7 @@
 
 <slot />
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Finally, there's the nuclear option — <code>invalidateAll()</code>. This will indiscriminately
     re-run all <code>load</code> functions for the current page, regardless of what they depend on.
   </p>

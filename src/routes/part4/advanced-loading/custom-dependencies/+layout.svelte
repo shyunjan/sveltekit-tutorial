@@ -12,7 +12,7 @@
 
 <slot />
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Calling <code>fetch(url)</code> inside a <code>load</code> function registers <code>url</code>
     as a dependency. Sometimes it's not appropriate to use <code>fetch</code>, in which case you can
     specify a dependency manually with the

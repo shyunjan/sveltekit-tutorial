@@ -1,7 +1,7 @@
 <h1>About</h1>
 <p>This is the about page.</p>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p class="note">
     <span>NOTE</span>
     Unlike traditional multi-page apps, navigating to <code>/about</code> and back updates the

@@ -3,7 +3,7 @@
   import { colors } from './colors.js';
 </script>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p class="note">
     <span>NOTE</span>
     Named slots can also have props; use the <code>let</code> directive on an element with a

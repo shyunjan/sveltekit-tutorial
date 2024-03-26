@@ -19,7 +19,7 @@
   }
 </style>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Environment variables — like API keys and database credentials — can be added to a
     <code>.env</code> file, and they will be made available to your application.
   </p>

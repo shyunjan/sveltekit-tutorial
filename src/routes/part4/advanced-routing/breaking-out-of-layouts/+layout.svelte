@@ -37,7 +37,7 @@
   }
 </style>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   <p>Ordinarily, a page inherits every layout above it, meaning that
     <code>./a/b/c/+page.svelte</code> inherits four layouts:
   </p>

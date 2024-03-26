@@ -16,7 +16,7 @@
   }
 </script>
 
-<div class="tutorial">
+<div class="mt-16 mb-8 relative">
   Like <a href="https://learn.svelte.dev/tutorial/onmount" target="_blank">lifecycle functions</a>,
   <code>setContext</code> and <code>getContext</code> must be called during component initialisation. 
   (The context key (<code >'canvas'</code > in this case) can be anything you like, including 
