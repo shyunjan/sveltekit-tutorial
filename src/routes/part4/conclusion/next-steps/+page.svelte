@@ -11,7 +11,7 @@
   }
 </style>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>Congratulations! If you've made it the entire way through this tutorial, you can now consider
     yourself a Svelte and SvelteKit expert.
   </p>

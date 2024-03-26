@@ -22,7 +22,7 @@
   }
 </style>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>As with
     <a href="https://learn.svelte.dev/tutorial/env-static-private" target="_blank"
     >private environment variables</a>, it's preferable to use static values if possible, but if

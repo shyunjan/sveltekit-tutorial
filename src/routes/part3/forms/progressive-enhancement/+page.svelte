@@ -69,7 +69,7 @@
   {/if}
 </div>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p class="note">
     바로 이전 tutorial 과정(The &lt;form&gt; element, Named form actions, Validation)과 이번
     장(progressive_enhancement)을 따로 분리한 이유는 이번 장부터는 form 태그를 통한 페이지 이동이

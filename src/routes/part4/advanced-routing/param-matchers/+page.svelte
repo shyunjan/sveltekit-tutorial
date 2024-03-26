@@ -1,6 +1,6 @@
 <h1>color picker</h1>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>To prevent the router from matching on invalid input, you can specify a matcher. For example,
     you might want a route like <code>/colors/[value]</code> to match hex values like
     <code>/colors/ff3e00</code> but not named colors like <code>/colors/octarine</code> or any

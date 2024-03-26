@@ -34,7 +34,7 @@
   </ul>
 </div>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p class="note">
     <span>NOTE</span>
     You can shorten <code>&lt;svelte:options immutable=&#123true&#125</code> /&gt; to <code>&lt;svelte:options immutable/&gt;</code> if you prefer.

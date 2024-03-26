@@ -38,7 +38,7 @@
 
   <button on:click={clear}> Clear completed </button>
 
-  <div class="mt-16 mb-8 relative">
+  <div class="tutorial">
     <p class="note">
       <span>NOTE</span>
       Note that interacting with these <code>&lt;input&gt;</code> elements will mutate the array. If you

@@ -3,7 +3,7 @@
 </script>
 
 <h1>{data.message}</h1>
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>
     The <code>event</code> object passed into <code>handle</code> is the same object — an instance
     of a 

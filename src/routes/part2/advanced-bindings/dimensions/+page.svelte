@@ -15,7 +15,7 @@
 	<span class="size">{w} x {h}px</span>
 </div>
 <br/>
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
 	<p class="note">
 		<span>NOTE</span>
 		Elements are measured using a technique similar to <a href="http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/" target="_blank">this one</a>. There is some overhead involved, so it's not recommended to use this for large numbers of elements.<br/>

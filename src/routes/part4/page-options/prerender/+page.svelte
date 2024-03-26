@@ -1,6 +1,6 @@
 <h1>Prerendering</h1>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>
     Prerendering means generating HTML for a page once, at build time, rather than dynamically for
     each request.

@@ -1,4 +1,4 @@
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>In the chapter on
     <a href="https://learn.svelte.dev/tutorial/page-data" target="_blank">loading data</a>, 
     we saw how you can export load functions from <code>+page.js</code>, 

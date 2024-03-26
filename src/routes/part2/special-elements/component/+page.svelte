@@ -20,6 +20,6 @@
 
 <svelte:component this={selected.component} />
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   The <code>this</code> value can be any component constructor, or a falsy value — if it's falsy, no component is rendered.
 </div>

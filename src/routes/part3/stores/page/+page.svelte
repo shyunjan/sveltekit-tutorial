@@ -1,5 +1,5 @@
 <h1>Stores &gt; page</h1>
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>
     SvelteKit makes three readonly stores available via the <code>$app/stores</code> module — 
     <code>page</code>, <code>navigating</code> and <code>updated</code>. The one you'll use most 

@@ -7,7 +7,7 @@
 
 <slot />
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>Sometimes it's useful to use layouts without affecting the route — for example, you might need
     your <code>/app</code> and <code>/account</code> routes to be behind authentication, while your
     <code>/about</code> page is open to the world. We can do this with a <em>route group</em>, which

@@ -4,6 +4,27 @@ const config = {
 
 	theme: {
 		extend: {
+      fontSize: {
+        ".8xl": ['1.175rem', {
+          lineHeight: 1.6,
+        }],
+        ".9xl": ['1.2rem', {
+          lineHeight: 1.618,
+        }],
+        "2.5xl": ['1.6rem !important', {
+          lineHeight: 1.618,
+        }],
+        "4.2xl": ['2.4rem', {
+          lineHeight: 1.35,
+        }],
+        "5.3xl": ['3.2rem', {
+          lineHeight: 1.1,
+        }],
+      },
+      lineHeight: {
+        h1: 1.1,
+        h2: 1.35,
+      },
       colors: {
         indigo: {
           90: '#e0e6eb'
@@ -56,9 +77,26 @@ const config = {
           900: '#485060',
           950: '#2f333c',
         },
+        'primary-hsl': 'hsl(var(--sk-theme-1-hsl))',
+        'primary-hsla': 'hsla(var(--sk-theme-1-hsl), .02)',
       },
       margin: {
         0.4: '0.1rem',
+        6.5: '1.6rem',
+        7.5: '1.8rem',
+        9.5: '2.4rem',
+      },
+      padding: {
+        0.4: '0.1rem',
+        6.5: '1.6rem',
+        7.5: '1.8rem',
+        9.5: '2.4rem',
+      },
+      borderRadius: {
+        ml: '0.4rem',
+      },
+      boxShadow: {
+        2: '0 2px 6px hsla(var(--sk-theme-1-hsl),.2)',
       }
     }
 	},

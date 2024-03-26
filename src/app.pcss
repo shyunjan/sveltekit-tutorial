@@ -5,24 +5,32 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --sk-theme-1-hsl: 12,94%,62%;
+  }
   * {
     font-family: "Overpass",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
     /* box-sizing: content-box; */
   }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    tab-size: 2;
+  }
   
   a {
-    color: theme(colors.stone.890);
+    @apply text-stone-890;
     text-decoration: none;
   }
   a:visited {
-    color: theme(colors.teal.850);
+    @apply text-teal-850;
   }
   a:hover {
-    color: theme(colors.emerald.410);
-    font-weight: theme(fontWeight.semibold);
+    @apply text-emerald-410 font-semibold;
   }
   a:active {
-    color: theme(colors.matisse.600);
+    @apply text-matisse-600;
   }
 
   h1,
@@ -31,49 +39,45 @@
   h4,
   h5,
   h6 {
-    font-weight: theme(fontWeight.normal);
+    @apply relative leading-h1 font-normal;
     font-variant-numeric: tabular-nums;
   }
   :is(h1, h2, h3, h4, h5, h6, p) {
-    margin: theme(margin.4) theme(margin[0.4]);
+    @apply my-4 mx-0.4;
   }
   :is(h1, h2, h3, h4, h5, h6, p, label):first-child {
-    margin-top: 0;
+    @apply mt-0;
   }
   :is(h1, h2, h3, h4, h5, h6, p, label):last-child {
-    margin-bottom: 0;
+    @apply mb-0;
   }
   h1 {
-    font-size: theme(fontSize.3xl);
+    @apply text-5xl leading-h1;
   }
   h2 {
-    font-size: theme(fontSize.2xl); 
-    border-bottom:1px solid theme(colors.silver.300);
-    
+    @apply text-4.2xl leading-h2 mt-16 border-b border-silver-300;
   }
   h3 {
-    font-size: theme(fontSize.xl); 
-    margin-bottom: theme(margin.4);
+    @apply text-3xl leading-h1;
+  }
+  
+  p {
+    @apply m-2;
   }
   
   ul {
-    display: contents;
+    @apply contents;
   }
   
   form {
-    display: flex;
-    flex-direction: column;
-    gap: theme(gap.4);
-    align-items: baseline;
+    @apply flex flex-col gap-4 items-baseline;
   }
+  
   label {
-    display: flex;
-    align-items: center;
-    gap: theme(gap.2);
-    margin: theme(margin.2) theme(margin[0.4]);
+    @apply flex gap-2 items-center my-2 mx-0.4;
   }
   label input {
-    margin: 0;
+    @apply m-0;
   }
   button,
   input,
@@ -83,19 +87,34 @@
   }
   input,
   textarea {
-    background: white;
-    color: inherit;
+    @apply bg-white text-inherit;
   }
   input,
   textarea,
   select {
-    border: theme(borderWidth.DEFAULT) solid theme(borderColor.mystic.200);
-    border-radius: theme(borderRadius.md);
-    box-sizing: border-box;
-    padding: theme(padding.2);
+    @apply box-border border border-mystic-200 rounded-md p-2;
   }
   input {
-    line-height: theme(lineHeight.tight);
+    @apply leading-tight;
+  }
+
+  blockquote {    
+    @apply relative mt-6.5 mr-0 mb-9.5 pt-8 px-9.5 pb-7.5;
+  }
+  blockquote :last-child {
+    @apply m-0;
+  }
+  .tutorial :where(blockquote) {
+    @apply bg-primary-hsla border border-primary-hsl rounded-ml shadow-2 p-4;
+  }
+  .tutorial :where(blockquote)::before {
+    @apply block content-['note'] uppercase text-primary-hsl text-.8xl font-semibold mb-2;
+  }
+}
+
+@layer components {
+  .tutorial {
+    @apply relative mt-20 mb-8;
   }
 }
 

@@ -29,7 +29,7 @@
   }
 </style>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>In the <a href="https://learn.svelte.dev/tutorial/page-data" target="_blank">previous
     section on loading</a> we loaded data from the server using <code>+page.server.js</code> and
     <code>+layout.server.js</code> files. This is very convenient if you need to do things like

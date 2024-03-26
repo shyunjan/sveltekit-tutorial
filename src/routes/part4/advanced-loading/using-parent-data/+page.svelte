@@ -1,7 +1,7 @@
 <p>if a = 1 and b = a + 1, what is a + b?</p>
 <a href="/part4/advanced-loading/using-parent-data/sum">show answer</a>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>As we saw in the introduction to
     <a href="https://learn.svelte.dev/tutorial/layout-data" target="_blank">layout data</a>,
     <code>+page.svelte</code> and <code>+layout.svelte</code> components have access to everything

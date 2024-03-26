@@ -7,7 +7,7 @@
 
 <slot />
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>Sometimes it's helpful to make a parameter optional. A classic example is when you use
     the pathname to determine the locale — <code>/fr/...</code>, <code>/de/...</code> and so on —
     but you also want to have a default locale.

@@ -31,7 +31,7 @@
   </ul>
 </div>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p class="note">
     <span>NOTE</span>
     Default actions cannot coexist with named actions.

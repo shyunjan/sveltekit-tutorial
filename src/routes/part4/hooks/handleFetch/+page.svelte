@@ -3,7 +3,7 @@
 </script>
 
 <h1>{data.message}</h1>
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>The <code>event</code> object has a <code>fetch</code> method that behaves like the standard 
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">
       Fetch API</a>, 

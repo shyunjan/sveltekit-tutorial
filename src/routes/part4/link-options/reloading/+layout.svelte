@@ -23,7 +23,7 @@
 
 <p>the page has been open for {seconds} seconds</p>
 
-<div class="mt-16 mb-8 relative">
+<div class="tutorial">
   <p>Ordinarily, SvelteKit will navigate between pages without refreshing the page.
     In this exercise, if we navigate between <code>./</code> and <code>./test_for_reloading</code>,
     the timer keeps on ticking.
