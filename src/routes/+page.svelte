@@ -22,7 +22,7 @@
   <h2 class="mb-8">Part1: Basic Svelte</h2>
   <ul>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Introduction</h3>
+      <h3 class="mb-6">Introduction</h3>
       <ul>
         <li class="ml-10"><a href="/part1/introduction">Welcome to Svelte</a></li>
         <li class="ml-10"><a href="/part1/introduction">Your first component</a></li>
@@ -33,7 +33,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Reactivity</h3>
+      <h3 class="mb-6">Reactivity</h3>
       <ul>
         <li class="ml-10"><a href="/part1/reactivity">Assignments</a></li>
         <li class="ml-10"><a href="/part1/reactivity">Declarations</a></li>
@@ -42,7 +42,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Props</h3>
+      <h3 class="mb-6">Props</h3>
       <ul>
         <li class="ml-10"><a href="/part1/props">Declaring props</a></li>
         <li class="ml-10"><a href="/part1/props">Default values</a></li>
@@ -50,7 +50,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Logic</h3>
+      <h3 class="mb-6">Logic</h3>
       <ul>
         <li class="ml-10"><a href="/part1/logic/if">If blocks</a></li>
         <li class="ml-10"><a href="/part1/logic/if">Else blocks</a></li>
@@ -61,7 +61,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Events</h3>
+      <h3 class="mb-6">Events</h3>
       <ul>
         <li class="ml-10"><a href="/part1/events">Dom Events</a></li>
         <li class="ml-10"><a href="/part1/events">Inline handlers</a></li>
@@ -72,7 +72,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Bindings</h3>
+      <h3 class="mb-6">Bindings</h3>
       <ul>
         <li class="ml-10"><a href="/part1/bindings">Text Inputs</a></li>
         <li class="ml-10"><a href="/part1/bindings">Numeric inputs</a></li>
@@ -84,7 +84,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Lifecycle</h3>
+      <h3 class="mb-6">Lifecycle</h3>
       <ul>
         <li class="ml-10"><a href="/part1/lifecycle/onMount">onMount</a></li>
         <li class="ml-10">
@@ -94,7 +94,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Stores</h3>
+      <h3 class="mb-6">Stores</h3>
       <ul>
         <li class="ml-10"><a href="/part1/stores/writable-stores">Writable stores</a></li>
         <li class="ml-10"><a href="/part1/stores/writable-stores">Auto-subscriptions</a></li>
@@ -108,14 +108,14 @@
   <h2 class="mb-8">Part2: Advanced Svelte</h2>
   <ul>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Motion</h3>
+      <h3 class="mb-6">Motion</h3>
       <ul>
         <li class="ml-10"><a href="/part2/motion/tweens">Tweens</a></li>
         <li class="ml-10"><a href="/part2/motion/springs">Springs</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Transitions</h3>
+      <h3 class="mb-6">Transitions</h3>
       <ul>
         <li class="ml-10"><a href="/part2/transitions/directive">The transition directive</a></li>
         <li class="ml-10"><a href="/part2/transitions/adding-parameters">Adding parameters</a></li>
@@ -129,20 +129,20 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Animations</h3>
+      <h3 class="mb-6">Animations</h3>
       <ul>
         <li class="ml-10"><a href="/part2/transitions/deferred">The animate directive</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Actions</h3>
+      <h3 class="mb-6">Actions</h3>
       <ul>
         <li class="ml-10"><a href="/part2/actions/use-directive">The use directive</a></li>
         <li class="ml-10"><a href="/part2/actions/adding-parameters">Adding parameters</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Advanced bindings</h3>
+      <h3 class="mb-6">Advanced bindings</h3>
       <ul>
         <li class="ml-10">
           <a href="/part2/advanced-bindings/contenteditable-bindings">Contenteditable bindings</a>
@@ -156,7 +156,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Classes and styles</h3>
+      <h3 class="mb-6">Classes and styles</h3>
       <ul>
         <li class="ml-10"><a href="/part2/classes&styles/css-directive">The class directive</a></li>
         <li class="ml-10"><a href="/part2/classes&styles/css-directive">Shorthand class directive</a></li>
@@ -165,7 +165,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Component composition</h3>
+      <h3 class="mb-6">Component composition</h3>
       <ul>
         <li class="ml-10"><a href="/part2/component-composition/slots">Slots</a></li>
         <li class="ml-10"><a href="/part2/component-composition/slots">Named slots</a></li>
@@ -175,13 +175,13 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Context API</h3>
+      <h3 class="mb-6">Context API</h3>
       <ul>
         <li class="ml-10"><a href="/part2/context-api">setContext and getContext</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Special elements</h3>
+      <h3 class="mb-6">Special elements</h3>
       <ul>
         <li class="ml-10"><a href="/part2/special-elements/self">&lt;svelte:self&gt;</a></li>
         <li class="ml-10"><a href="/part2/special-elements/component">&lt;svelte:component&gt;</a></li>
@@ -198,20 +198,20 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Module context</h3>
+      <h3 class="mb-6">Module context</h3>
       <ul>
         <li class="ml-10"><a href="/part2/advanced-bindings/media-elements">Sharing code</a></li>
         <li class="ml-10"><a href="/part2/advanced-bindings/media-elements">Exports</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Miscellaneous</h3>
+      <h3 class="mb-6">Miscellaneous</h3>
       <ul>
         <li class="ml-10"><a href="/part2/miscellaneous">The @debug tag</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Next steps</h3>
+      <h3 class="mb-6">Next steps</h3>
       <ul>
         <li class="ml-10"><a href="/part2/next-steps">Congratulations!</a></li>
       </ul>
@@ -220,13 +220,13 @@
   <h2 class="mb-8">Part3: Basic SvelteKit</h2>
   <ul>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Introduction</h3>
+      <h3 class="mb-6">Introduction</h3>
       <ul>
         <li class="ml-10"><a href="/">What is SvelteKit?</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Routing</h3>
+      <h3 class="mb-6">Routing</h3>
       <ul>
         <li class="ml-10"><a href="/part3/routing/about">Pages</a></li>
         <li class="ml-10"><a href="/part3/routing/layouts">Layouts</a></li>
@@ -234,27 +234,27 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Loading data</h3>
+      <h3 class="mb-6">Loading data</h3>
       <ul>
         <li class="ml-10"><a href="/part3/routing/parameters">Page data</a></li>
         <li class="ml-10"><a href="/part3/routing/parameters">Layout data</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Headers and cookies</h3>
+      <h3 class="mb-6">Headers and cookies</h3>
       <ul>
         <li class="ml-10"><a href="/part3/headers&cookies/setting-headers">Setting headers</a></li>
         <li class="ml-10"><a href="/part3/headers&cookies/cookies">Reading and writing cookies</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Shared modules</h3>
+      <h3 class="mb-6">Shared modules</h3>
       <ul>
         <li class="ml-10"><a href="/part3/shared_modules">The $lib alias</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Forms</h3>
+      <h3 class="mb-6">Forms</h3>
       <ul>
         <li class="ml-10"><a href="/part3/forms/form-element">The &lt;form&gt; element</a></li>
         <li class="ml-10"><a href="/part3/forms/form-element">Named form actions</a></li>
@@ -264,7 +264,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">API routes</h3>
+      <h3 class="mb-6">API routes</h3>
       <ul>
         <li class="ml-10"><a href="/part3/api-routes/get-handlers">GET handlers</a></li>
         <li class="ml-10"><a href="/part3/api-routes/post-handlers">POST handlers</a></li>
@@ -272,7 +272,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Stores</h3>
+      <h3 class="mb-6">Stores</h3>
       <ul>
         <li class="ml-10"><a href="/part3/stores/page">page</a></li>
         <li class="ml-10"><a href="/part3/stores/navigating">navigating</a></li>
@@ -280,7 +280,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Errors and redirects</h3>
+      <h3 class="mb-6">Errors and redirects</h3>
       <ul>
         <li class="ml-10"><a href="/part3/errors&redirects/basics">Basics</a></li>
         <li class="ml-10"><a href="/part3/errors&redirects/basics">Error pages</a></li>
@@ -292,7 +292,7 @@
   <h2 class="mb-8">Part4: Advanced SvelteKit</h2>
   <ul>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Hooks</h3>
+      <h3 class="mb-6">Hooks</h3>
       <ul>
         <li class="ml-10"><a href="/part4/hooks/handle">handle</a></li>
         <li class="ml-10"><a href="/part4/hooks/RequestEvent">The RequestEvent object</a></li>
@@ -301,7 +301,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Page options</h3>
+      <h3 class="mb-6">Page options</h3>
       <ul>
         <li class="ml-10"><a href="/part4/page-options/basics">Basics</a></li>
         <li class="ml-10"><a href="/part4/page-options/ssr">ssr</a></li>
@@ -311,14 +311,14 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Link options</h3>
+      <h3 class="mb-6">Link options</h3>
       <ul>
         <li class="ml-10"><a href="/part4/link-options/preloading">Preloading</a></li>
         <li class="ml-10"><a href="/part4/link-options/reloading">Reloading the page</a></li>
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Advanced routing</h3>
+      <h3 class="mb-6">Advanced routing</h3>
       <ul>
         <li class="ml-10"><a href="/part4/advanced-routing/optional-parameters">Optional parameters</a></li>
         <li class="ml-10"><a href="/part4/advanced-routing/rest-parameters">Rest parameters</a></li>
@@ -328,7 +328,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Advanced loading</h3>
+      <h3 class="mb-6">Advanced loading</h3>
       <ul>
         <li class="ml-10"><a href="/part4/advanced-loading/universal-load-functions">Universal load functions</a></li>
         <li class="ml-10"><a href="/part4/advanced-loading/using-both-load-functions">Using both load functions</a></li>
@@ -339,7 +339,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Environment variables</h3>
+      <h3 class="mb-6">Environment variables</h3>
       <ul>
         <li class="ml-10"><a href="/part4/environment-variables/$env-static-private">$env/static/private</a></li>
         <li class="ml-10"><a href="/part4/environment-variables/$env-dynamic-private">$env/dynamic/private</a></li>
@@ -348,7 +348,7 @@
       </ul>
     </li>
     <li class="mt-2 mr-0 mb-4 ml-10">
-      <h3 class="mb-4">Conclusion</h3>
+      <h3 class="mb-6">Conclusion</h3>
       <ul>
         <li class="ml-10"><a href="/part4/conclusion/next-steps">Next steps</a></li>
       </ul>

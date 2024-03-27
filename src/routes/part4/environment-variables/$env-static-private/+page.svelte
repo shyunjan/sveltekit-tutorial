@@ -1,4 +1,5 @@
 <script>
+  import { marked } from '$lib';
   export let form;
 </script>
 
@@ -37,8 +38,12 @@
     passphrase, using an environment variable.</p>
   <p>First, in .env, add a new environment variable:</p>
   <div class="code-block">
-    <p>See <code>/.env</code></p>
-    <pre class="language-bash"><code><span class="token assign-left variable">PASSPHRASE</span><span class="token operator">=</span><span class="highlight add"><span class="token string">"open sesame"</span></span></code></pre>
+    <span class="filename">/.env</span>
+    {@html marked.parse(`
+  \`\`\`bash
+    PASSPHRASE="open sesame";
+  \`\`\``)
+    }
   </div>
   <p>Open <code>src/routes/+page.server.js</code>. Import <code>PASSPHRASE</code> from
     <code>$env/static/private</code> and use it inside the
