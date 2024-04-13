@@ -1,18 +1,39 @@
-import { Marked } from "marked";
-import { markedHighlight } from "marked-highlight";
-import hljs from "highlight.js";
-import 'highlight.js/styles/github-dark.css';
+// import { marked } from "marked";
+// import Prism from "./prism";
+// import Prism from "./prism/components/";
+// import 'prismjs/components/prism-core';
+// import 'prismjs/plugins/autoloader/prism-autoloader';
+// import 'prismjs/plugins/line-numbers/prism-line-numbers';
+// import 'prismjs/components/prism-markup-templating';
+// import loadLanguages from "prismjs/components/";
+// import "prismjs/components/prism-bash.js";
 
-// or UMD script
-// <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
-// <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
-// const {markedHighlight} = globalThis.markedHighlight;
-export const marked = new Marked(
-  markedHighlight({
-    langPrefix: 'hljs language-',
-    highlight(code, lang, info) {
-      const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-      return hljs.highlight(code, { language }).value;
-    }
-  })
-);
+// console.debug('calling marked-code.ts');
+// (await import("prismjs/components/")).default(['bash']);
+// (import('prismjs/components/')).then(loader => { loader.default(['bash']); });
+
+// Prism.plugins.languages_path = '/components/prism-components';
+
+// loadLanguages(['bash']);
+
+// const renderer = {
+//   code: (code: string, infostring: any) => {
+//     try {
+//       const lang = infostring ?? 'markup';
+//       console.debug(`code: ${code}, infostring: ${infostring},`);
+//       console.debug(`Prism.languages[lang]: ${Prism.languages["lang"]}`);
+//       return Prism.highlight(
+//         code,
+//         Prism.languages[lang],
+//         infostring ?? '',
+//       );
+//     } catch (err) {
+//       console.error(err);
+//       return false;
+//     }
+//   },
+// };
+
+// marked.use({ renderer });
+
+// export const markDown = marked;
