@@ -1,13 +1,14 @@
 <script>
-	import Nested from './nested-components/Nested.svelte';
-	let name = 'Svelte';
-	let src = '/image.gif';
-	let string = `this string contains some <strong>HTML TAG!!!</strong>`;
+  import Nested from './components/Nested.svelte';
+  import Tutorial from './components/Tutorial.md';
+  let name = 'Svelte';
+  let src = '/image.gif';
+  let string = `this string contains some <strong>HTML TAG!!!</strong>`;
 </script>
 
 <h1>Hello {name.toUpperCase()}!</h1>
 
-<img {src} alt="{name} dances."/>
+<img {src} alt="{name} dances." />
 
 <p>This is a paragraph.</p>
 <p>{@html string}</p>
@@ -22,10 +23,14 @@
 -->
 <Nested />
 
+<div class="tutorial">
+  <Tutorial />
+</div>
+
 <style>
-	p {
-		color: goldenrod;
-		font-family: 'Comic Sans MS', cursive;
-		font-size: 2em;
-	}
+  p {
+    color: goldenrod;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2em;
+  }
 </style>

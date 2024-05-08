@@ -1,7 +1,7 @@
 <script lang="ts">
   export let form;
 
-  import PageServer from './components/PageServer.md';
+  import Tutorial from './components/Tutorial.md';
 </script>
 
 <form method="POST">
@@ -16,7 +16,7 @@
 {/if}
 
 <div class="tutorial">
-  <PageServer />
+  <Tutorial />
 </div>
 
 <style>
