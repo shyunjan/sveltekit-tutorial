@@ -130,6 +130,15 @@
   .tutorial :where(p, ol, ul) {
     @apply mx-0 my-1em;
   }
+  .tutorial :where(ol, ul) {
+    @apply ml-12 block;
+  }
+  .tutorial :where(li) {
+    @apply relative mb-2 leading-6;
+  }
+  .tutorial :where(ul li)::before {
+    @apply rounded-0.2 absolute -ml-1.8 mt-0.8 box-content h-2.5 w-2.5 bg-silver-800 opacity-70 content-[''];
+  }
   .tutorial :where(code) {
     @apply -top-0.1 mx-0.2 my-0 px-0.4 py-0.2;
   }
@@ -138,10 +147,10 @@
   }
   .tutorial code[data-file],
   .tutorial figcaption {
-    @apply cursor-pointer bg-tuatara-900 bg-[url(/icons/file-edit-inline-dark.031f74ff.svg)] bg-no-repeat text-iron-300;
+    @apply cursor-pointer bg-[url(/icons/file-edit-inline-dark.031f74ff.svg)] bg-no-repeat text-iron-300;
   }
   .tutorial code[data-file] {
-    @apply bg-[length:1rem_1rem] bg-[0.5rem_center] pl-8;
+    @apply bg-tuatara-600 bg-[length:1rem_1rem] bg-[0.5rem_center] pl-8;
   }
   .tutorial figcaption {
     @apply box-border block w-full rounded-b-none rounded-t-0.4 bg-tuatara-900 bg-[length:1rem_1rem] bg-[1rem_54%] pb-0.8 pl-10 pr-4 pt-4 font-mono text-.9x font-normal text-iron-300 content-['attr(data-file)'];

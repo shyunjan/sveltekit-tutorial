@@ -193,6 +193,8 @@ const config = {
         0.1: '0.1rem'
       },
       borderRadius: {
+        0.2: '0.2rem',
+        0.3: '0.3rem',
         0.4: '0.4rem'
       },
       boxShadow: {

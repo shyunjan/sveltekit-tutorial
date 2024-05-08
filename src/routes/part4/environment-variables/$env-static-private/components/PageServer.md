@@ -42,3 +42,41 @@ export const actions = {
   }
 };
 ```
+
+## Keeping secrets ## 
+
+It's important that sensitive data doesn't accidentally end up being sent to the browser, where it could easily be stolen by hackers and scoundrels.  
+
+SvelteKit makes it easy to prevent this from happening. Notice what happens if we try to import `PASSPHRASE` into <code data-file="./+page.svelte">./+page.svelte</code>:  
+
+```svelte title="./+page.svelte" {2}
+<script>
+  import { PASSPHRASE } from '$env/static/private';
+  export let form;
+</script>
+```
+
+An error overlay pops up, telling us that `$env/static/private` cannot be imported into client-side code. It can only be imported into server modules:  
+
+* `+page.server.ts`
+* `+layout.server.js`
+* `+server.js`
+* any modules ending with `.server.js`
+* any modules inside `src/lib/server`
+
+In turn, these modules can only be imported by _other_ server modules.
+
+## Static vs dynamic ## 
+
+The static in `$env/static/private` indicates that these values are known at build time, and can be _statically replaced_. This enables useful optimisations. This is an example codes for that:  
+
+```javascript
+import { FEATURE_FLAG_X } from 'env/static/private';
+
+if (FEATURE_FLAG_X === 'enabled') {
+  // code in here will be removed from the build output
+  // if FEATURE_FLAG_X is not enabled
+}
+```
+
+In some cases you might need to refer to environment variables that are _dynamic_ — in other words, not known until we run the app. We'll cover this case in the next exercise.  
