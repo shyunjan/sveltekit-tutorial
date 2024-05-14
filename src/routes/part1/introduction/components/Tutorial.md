@@ -52,3 +52,19 @@ It's not uncommon to have an attribute where the name and value are the same, li
 ```svelte title="src\routes\part1\introduction\+page.svelte"
 <img {src} alt="{name} dances." />
 ```
+...
+___
+
+# **Styling**
+
+Just like in HTML, you can add a &amp;lt;style&amp;gt; tag to your component:
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<style>
+  p {
+    color: goldenrod;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2em;
+  }
+</style>
+```
+Importantly, these rules are _scoped to the component_. You won't accidentally change the style of &amp;lt;p&amp;gt; elements elsewhere in your app, as we'll see in the next step.
