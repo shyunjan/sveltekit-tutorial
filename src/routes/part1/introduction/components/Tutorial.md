@@ -25,7 +25,30 @@ Inside the curly braces, we can put any JavaScript we want. Try changing `name` 
 ```svelte title="src\routes\part1\introduction\+page.svelte"
 <h1>Hello {name.toUpperCase()}!</h1>
 ```
+...
 ___
-
+  
 # **Dynamic attributes** 
 
+Just like you can use curly braces to control text, you can use them to control element attributes:
+
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<img src={src}>
+```
+
+> A11y: &amp;lt;img&amp;gt; element should have an alt attribute
+
+...  
+In this case, we're missing the alt attribute that describes the image for people using screenreaders, or people with slow or flaky internet connections that can't download the image. Let's add one:
+
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<img src={src} alt="A man dances">
+```
+
+## Shorthand attributes
+
+It's not uncommon to have an attribute where the name and value are the same, like src=&amp;#123;src&amp;#125;. Svelte gives us a convenient shorthand for these cases:
+
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<img {src} alt="{name} dances." />
+```

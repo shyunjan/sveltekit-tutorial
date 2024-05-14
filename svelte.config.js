@@ -21,6 +21,12 @@ const config = {
   // preprocess: [vitePreprocess({}), preprocess(mdsvex(mdsvexConfig))],
   preprocess: [vitePreprocess({}), mdsvex(mdsvexConfig)],
 
+  // onwarn: (warning, handler) => {
+  //   console.debug(`warning.code = ${warning.code}`)
+  //   if (warning.code.toLowerCase().startWith(`a11y-`)) return;
+  //   handler(warning);
+  // },
+
   kit: {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
@@ -44,6 +50,8 @@ const config = {
   vitePlugin: {
     // This enables compile-time warnings to be visible in the learn.svelte.dev editor
     onwarn: (warning, defaultHandler) => {
+      const warningCode = warning.code.toLowerCase();
+      if (warningCode === 'a11y-no-noninteractive-tabindex' || 'a11y-missing-attribute') return;
       console.log('svelte:warnings:%s', JSON.stringify(warning));
       defaultHandler(warning);
     }
