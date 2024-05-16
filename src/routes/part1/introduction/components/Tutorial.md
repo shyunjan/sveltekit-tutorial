@@ -68,3 +68,27 @@ Just like in HTML, you can add a &amp;lt;style&amp;gt; tag to your component:
 </style>
 ```
 Importantly, these rules are _scoped to the component_. You won't accidentally change the style of &amp;lt;p&amp;gt; elements elsewhere in your app, as we'll see in the next step.
+___
+
+# **Nested components**
+
+Add a `&lt;script&gt;` tag to the top of <code data-file="./+page.svelte">App.svelte</code> that imports <code data-file="./components/Nested.svelte">Nested.svelte</code>...
+and include a `&lt;Nested /&gt;` component:
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<script>
+  import Nested from './components/Nested.svelte';
+</script>
+...
+<Nested />
+```
+Notice that even though <code data-file="./components/Nested.svelte">Nested.svelte</code> has a `&lt;p&gt;` element, the styles from <code data-file="./+page.svelte">App.svelte</code> don't leak in.
+> Component names are always capitalised, to distinguish them from HTML elements.  
+
+___
+# **HTML tags**
+sometimes you need to render HTML directly into a component. For example, the words you're reading right now exist in a markdown file that gets included on this page as a blob of HTML.  
+In Svelte, you do this with the special `{@html ...}` tag:
+```svelte title="src\routes\part1\introduction\+page.svelte"
+<p>{@html string}</p>
+```
+> **Warning!** Svelte doesn't perform any sanitization of the expression inside `{@html ...}` before it gets inserted into the DOM. This isn't an issue if the content is something you trust like an article you wrote yourself. However if it's some untrusted user content, e.g. a comment on an article, then it's critical that you manually escape it, otherwise you risk exposing your users to [Cross-Site Scripting](https://owasp.org/www-community/attacks/xss/) (XSS) attacks.
