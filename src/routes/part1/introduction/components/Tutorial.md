@@ -22,7 +22,7 @@ In Svelte, an application is composed from one or more _components_. A component
 
 Inside the curly braces, we can put any JavaScript we want. Try changing `name` to `name.toUpperCase()` for a shoutier greeting.
 
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" "{name.toUpperCase()}"
 <h1>Hello {name.toUpperCase()}!</h1>
 ```
 ...
@@ -32,7 +32,7 @@ ___
 
 Just like you can use curly braces to control text, you can use them to control element attributes:
 
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" "src={src}"
 <img src={src}>
 ```
 
@@ -41,7 +41,7 @@ Just like you can use curly braces to control text, you can use them to control 
 ...  
 In this case, we're missing the alt attribute that describes the image for people using screenreaders, or people with slow or flaky internet connections that can't download the image. Let's add one:
 
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" /alt="A man dances"/
 <img src={src} alt="A man dances">
 ```
 
@@ -49,7 +49,7 @@ In this case, we're missing the alt attribute that describes the image for peopl
 
 It's not uncommon to have an attribute where the name and value are the same, like src=&amp;#123;src&amp;#125;. Svelte gives us a convenient shorthand for these cases:
 
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" "{src}"
 <img {src} alt="{name} dances." />
 ```
 ...
@@ -58,7 +58,7 @@ ___
 # **Styling**
 
 Just like in HTML, you can add a &amp;lt;style&amp;gt; tag to your component:
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" {2-6}
 <style>
   p {
     color: goldenrod;
@@ -74,7 +74,7 @@ ___
 
 Add a `&lt;script&gt;` tag to the top of <code data-file="./+page.svelte">App.svelte</code> that imports <code data-file="./components/Nested.svelte">Nested.svelte</code>...
 and include a `&lt;Nested /&gt;` component:
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" {1-3} "<Nested />"
 <script>
   import Nested from './components/Nested.svelte';
 </script>
@@ -88,7 +88,7 @@ ___
 # **HTML tags**
 sometimes you need to render HTML directly into a component. For example, the words you're reading right now exist in a markdown file that gets included on this page as a blob of HTML.  
 In Svelte, you do this with the special `{@html ...}` tag:
-```svelte title="src\routes\part1\introduction\+page.svelte"
+```svelte title="src/routes/part1/introduction/+page.svelte" "@html"
 <p>{@html string}</p>
 ```
 > **Warning!** Svelte doesn't perform any sanitization of the expression inside `{@html ...}` before it gets inserted into the DOM. This isn't an issue if the content is something you trust like an article you wrote yourself. However if it's some untrusted user content, e.g. a comment on an article, then it's critical that you manually escape it, otherwise you risk exposing your users to [Cross-Site Scripting](https://owasp.org/www-community/attacks/xss/) (XSS) attacks.
