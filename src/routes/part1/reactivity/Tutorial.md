@@ -79,9 +79,3 @@ const foo = obj.foo;
 foo.bar = 2;
 ```
 ...won't trigger reactivity on `obj.foo.bar`, unless you follow it up with `obj = obj`.  
-
-------
-# **Props**
-
-
-
