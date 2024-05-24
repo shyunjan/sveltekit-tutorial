@@ -19,11 +19,6 @@
 <button on:click={handleClick}> Remove first thing </button>
 
 {#each things as thing (thing.id)}
-  <!-- {#each things as thing (thing)} -->
-  <!-- 
-    원칙은 위 라인처럼 (thing.id)와 같이 number나 string키를 사용하는 것이지만 (thing.id)처럼 그냥 object를 사용해도 된다.
-    오히려 이 방법이 실제로 API Data를 fetch했을 때 유리하다.
-  -->
   <Thing name={thing.name} />
 {/each}
 
