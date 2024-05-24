@@ -106,7 +106,7 @@
   }
 
   button {
-    @apply bg-lochmara-500 rounded border-none px-1.6 py-0.8 text-white;
+    @apply rounded border-none bg-lochmara-500 px-1.6 py-0.8 text-white;
   }
 
   button:hover {
@@ -143,6 +143,7 @@
   .tutorial :where(blockquote)::before {
     @apply mb-2 block text-.8x font-semibold uppercase text-primary-hsl content-['note'];
   }
+
   .tutorial :where(p, ol, ul) {
     @apply mx-0 my-1em;
   }
@@ -150,17 +151,25 @@
     @apply ml-12 block;
   }
   .tutorial :where(li) {
-    @apply relative mb-2 leading-6;
+    @apply relative mb-0.8 leading-9;
   }
   .tutorial :where(ul li)::before {
     @apply absolute -ml-1.8 mt-0.8 box-content h-2.5 w-2.5 rounded-0.2 bg-silver-800 opacity-70 content-[''];
   }
+  .tutorial :where(ol) {
+    @apply list-decimal;
+  }
+
   .tutorial :where(code) {
     @apply -top-0.1 mx-0.2 my-0 px-0.4 py-0.2;
   }
   .tutorial :where(p code) {
     @apply inline-flex max-w-full overflow-x-auto bg-mystic-200 py-0;
   }
+  .tutorial :where(ol, ul) :where(code) {
+    @apply bg-mystic-200;
+  }
+
   .tutorial code[data-file],
   .tutorial figcaption {
     @apply cursor-pointer bg-[url(/icons/file-edit-inline-dark.031f74ff.svg)] bg-no-repeat text-iron-300;
