@@ -1,37 +1,41 @@
 <script lang="ts">
-	let m = { x: 0, y: 0 };
+  let m = { x: 0, y: 0 };
 
-	function handleMove(event: MouseEvent) {
-		m.x = event.clientX;
-		m.y = event.clientY;
-	}
+  function handleMove(event: MouseEvent) {
+    m.x = event.clientX;
+    m.y = event.clientY;
+  }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-<div on:pointermove={handleMove}>
-	The pointer is at {m.x} x {m.y}
+<div on:pointermove={handleMove} class="mousePad">
+  The pointer is at {m.x} x {m.y}
 </div>
 <!-- 아래와 같이 inline form으로 만들 수도 있다 -->
 <!-- 
-<div on:pointermove={(e) => {
-  m.x = e.clientX;
-  m.y = e.clientY;
-}}>
-  The pointer is at {m.x} x {m.y}
-</div> -->
+  <div on:pointermove={(e) => {
+    m = { x: e.clientX, y: e.clientY };
+  }}>
+    The pointer is at {m.x} x {m.y}
+  </div> 
+-->
 <!-- 
   NOTE
-  In some frameworks you may see recommendations to avoid inline event handlers for performance 
-  reasons, particularly inside loops. That advice doesn't apply to Svelte — the compiler will 
-  always do the right thing, whichever form you choose.
+  
 -->
 
+<div class="tutorial fixed top-1/3">
+  <Tutorial />
+</div>
+
 <style>
-	div {
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		padding: 1rem;
-	}
+  .mousePad {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
 </style>
