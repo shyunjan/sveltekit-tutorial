@@ -20,10 +20,6 @@
     The pointer is at {m.x} x {m.y}
   </div> 
 -->
-<!-- 
-  NOTE
-  
--->
 
 <div class="tutorial fixed top-1/3">
   <Tutorial />
