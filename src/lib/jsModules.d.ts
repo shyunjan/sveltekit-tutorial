@@ -1,2 +1,3 @@
-declare module "elizabot";
-declare module "*.md";
+declare module 'elizabot';
+declare module 'marked';
+declare module '*.md';
