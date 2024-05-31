@@ -10,3 +10,5 @@ A `<select>` element can have a `multiple` attribute, in which case it will popu
 ```
 Note that we're able to omit the `value` attribute on the `<option>`, since the value is identical to the element's contents.
 > Press and hold the `control` key (or the `command` key on MacOS) to select multiple options.
+
+[Next: Textarea inputs](/part1/bindings/textarea-inputs)

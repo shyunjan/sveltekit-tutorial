@@ -1,9 +1,6 @@
 <script lang="ts">
   import Eliza from 'elizabot';
-  import {
-    beforeUpdate,
-    afterUpdate
-  } from 'svelte';
+  import { beforeUpdate, afterUpdate } from 'svelte';
 
   let div: HTMLDivElement;
   let autoscroll = false;
@@ -29,7 +26,7 @@
 
   const typing = { author: 'eliza', text: '...' };
 
-  let comments: { author: string, text: string }[] = [];
+  let comments: { author: string; text: string }[] = [];
 
   async function handleKeydown(event: KeyboardEvent) {
     const target = event.target as HTMLInputElement;
@@ -51,9 +48,11 @@
       comments = [...comments, typing];
 
       await pause(500 * (1 + Math.random()));
-      comments = [...comments, reply].filter(comment => comment !== typing);
+      comments = [...comments, reply].filter((comment) => comment !== typing);
     }
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="container">
@@ -76,6 +75,10 @@
 
     <input on:keydown={handleKeydown} />
   </div>
+</div>
+
+<div class="tutorial">
+  <Tutorial />
 </div>
 
 <style>
@@ -155,7 +158,8 @@
       border: 0.2em solid #222;
       border-radius: 1em;
       box-sizing: border-box;
-      filter: drop-shadow(1px 1px 0px #222) drop-shadow(2px 2px 0px #222) drop-shadow(3px 3px 0px #222)
+      filter: drop-shadow(1px 1px 0px #222) drop-shadow(2px 2px 0px #222)
+        drop-shadow(3px 3px 0px #222);
     }
 
     .phone::after {
@@ -166,7 +170,7 @@
       height: 1em;
       left: 20%;
       top: 0;
-      border-radius: 0 0 0.5em 0.5em
+      border-radius: 0 0 0.5em 0.5em;
     }
   }
 

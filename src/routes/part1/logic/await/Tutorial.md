@@ -18,3 +18,5 @@ If you know that your promise can't reject, you can omit the `catch` block. You 
   <p>The number is {n}</p>
 {/await} 
 ```
+
+[Next: Events](/part1/events)

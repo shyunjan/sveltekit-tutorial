@@ -37,3 +37,5 @@ Multiple conditions can be 'chained' together with `else if`:
   <p>{count} is less than 5</p>
 {/if}
 ```
+
+[Next: Each blocks](/part1/logic/each)

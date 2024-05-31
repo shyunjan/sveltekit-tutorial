@@ -17,3 +17,5 @@ The full list of modifiers:
 * `trusted` — only trigger handler if `event.isTrusted` is `true`, meaning the event was triggered by a user action rather than because some JavaScript called `element.dispatchEvent(...)`
 
 You can chain modifiers together, e.g. `on:click|once|capture={...}`.
+
+[Next: Component events](/part1/events/component-events)

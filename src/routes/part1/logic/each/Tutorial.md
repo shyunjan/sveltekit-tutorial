@@ -29,3 +29,5 @@ You can get the current _index_ as a second argument, like so:
   {/each}
 </div>
 ```
+
+[Next: Keyed each blocks](/part1/logic/keyed-each)

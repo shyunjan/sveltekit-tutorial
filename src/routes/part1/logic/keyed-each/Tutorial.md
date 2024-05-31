@@ -17,3 +17,5 @@ To do that, we specify a unique identifier (or "key") for each iteration of the 
 {/each}
 ```
 > You can use any object as the key, as Svelte uses a `Map` internally — in other words you could do `(thing)` instead of `(thing.id)`. Using a string or number is generally safer, however, since it means identity persists without referential equality, for example when updating with fresh data from an API server.
+
+[Next: Await blocks](/part1/logic/await)

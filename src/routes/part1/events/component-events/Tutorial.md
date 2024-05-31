@@ -36,3 +36,5 @@ An `on:message` event directive without a value means 'forward all `message` eve
 
 <Inner on:message />
 ```
+
+[Next: DOM event forwarding](/part1/events/dom-event-forwarding)

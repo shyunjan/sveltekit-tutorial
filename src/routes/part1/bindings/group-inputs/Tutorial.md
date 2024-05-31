@@ -16,3 +16,5 @@ If you have multiple `type="radio"` or `type="checkbox"` inputs relating to the 
   bind:group={flavours} 
 />
 ```
+
+[Next: Select multiple](/part1/bindings/select-multiple)

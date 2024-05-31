@@ -1,4 +1,7 @@
 ------
+# **beforeUpdate and afterUpdate**
+
+------
 # **onMount**
 Every component has a _lifecycle_ that starts when it is created, and ends when it is destroyed. There are a handful of functions that allow you to run code at key moments during that lifecycle. The one you'll use most frequently is `onMount`, which runs after the component is first rendered to the DOM.
 
