@@ -1,49 +1,27 @@
 ------
 # **beforeUpdate and afterUpdate**
+The `beforeUpdate` function schedules work to happen immediately before the DOM is updated. `afterUpdate` is its counterpart, used for running code once the DOM is in sync with your data.
 
-------
-# **onMount**
-Every component has a _lifecycle_ that starts when it is created, and ends when it is destroyed. There are a handful of functions that allow you to run code at key moments during that lifecycle. The one you'll use most frequently is `onMount`, which runs after the component is first rendered to the DOM.
+Together, they're useful for doing things imperatively that are difficult to achieve in a purely state-driven way, like updating the scroll position of an element.
 
-In this exercise, we have a `<canvas>` that we'd like to animate, using the `paint` function in <code data-file="src/routes/part1/lifecycle/onMount/gradient.js">gradient.js</code>. Begin by importing the `onMount` function from `svelte`. Then, add a callback that runs when the component mounts:
-```svelte title="src/routes/part1/lifecycle/onMount/+page.svelte" {2, 5-13}
-<script>
-  import { onMount } from 'svelte';
-  import { paint } from './gradient.js';
+This [Eliza](https://en.wikipedia.org/wiki/ELIZA) chatbot is annoying to use, because you have to keep scrolling the chat window. Let's fix that.
+```js title="src/routes/part1/lifecycle/beforeUpdate-afterUpdate/+page.svelte" /let autoscroll = false;/ {5-8, 12-14}
+let div;
+let autoscroll = false;
 
-  onMount(() => {
-    const canvas = document.querySelector('canvas');
-    const context = canvas?.getContext('2d');
+beforeUpdate(() => {
+  if (div) {
+    const scrollableDistance = div.scrollHeight - div.offsetHeight;
+    autoscroll = div.scrollTop > scrollableDistance - 20;
+  }
+});
 
-    requestAnimationFrame(function loop(t) {
-      requestAnimationFrame(loop);
-      paint(context, t);
-    });
-  });  
-</script>
+afterUpdate(() => {
+  if (autoscroll) {
+    div.scrollTo(0, div.scrollHeight);
+  }
+});
 ```
-> In a [later exercise](https://learn.svelte.dev/tutorial/bind-this), we'll learn how to get an element reference without using `document.querySelector`.
+Note that `beforeUpdate` will first run before the component has mounted, so we need to check for the existence of `div` before reading its properties.
 
-So far so good — you should see gently undulating colours in the shape of the Svelte logo. But there's one problem — the loop will continue even after the component has been destroyed. To fix that, we need to return a cleanup function from `onMount`:
-```svelte title="src/routes/part1/lifecycle/onMount/+page.svelte" /let/ /frame = / /return () => {/ /cancelAnimationFrame(frame);/ /};/
-<script>
-  import { onMount } from 'svelte';
-  import { paint } from './gradient.js';
-
-  onMount(() => {
-    const canvas = document.querySelector('canvas');
-    const context = canvas?.getContext('2d');
-
-    let frame = requestAnimationFrame(function loop(t) {
-      frame = requestAnimationFrame(loop);
-      paint(context, t);
-    });
-
-    return () => {
-      cancelAnimationFrame(frame);
-    };
-  });
-</script>
-```
-
-[Next: beforeUpdate and afterUpdate](/part1/lifecycle/beforeUpdate-afterUpdate)
+[Next: tick](/part1/lifecycle/tick)
