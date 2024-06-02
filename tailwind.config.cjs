@@ -193,7 +193,8 @@ const config = {
           950: '#363636'
         },
         'primary-hsl': 'hsl(var(--sk-theme-1-hsl))',
-        'primary-hsla': 'hsla(var(--sk-theme-1-hsl), .02)'
+        'primary-hsla': 'hsla(var(--sk-theme-1-hsl), .02)',
+        focus: `hsla(var(--sk-theme-1-hsl), .06)`
       },
       margin: {
         0.1: '0.1rem',
@@ -224,7 +225,10 @@ const config = {
         0.4: '0.4rem'
       },
       boxShadow: {
-        2: '0 2px 6px hsla(var(--sk-theme-1-hsl),.2)'
+        2: '0 2px 6px hsla(var(--sk-theme-1-hsl),.2)',
+        link: 'inset 0 -1px hsl(var(--sk-theme-1-hsl))',
+        'link-hover': 'inset 0 -2px hsl(var(--sk-theme-1-hsl))',
+        focus: `0 0 0 2px hsla(var(--sk-theme-1-hsl),.6)`
       }
     }
   },
