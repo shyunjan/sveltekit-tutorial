@@ -194,7 +194,7 @@ const config = {
         },
         'primary-hsl': 'hsl(var(--sk-theme-1-hsl))',
         'primary-hsla': 'hsla(var(--sk-theme-1-hsl), .02)',
-        focus: `hsla(var(--sk-theme-1-hsl), .06)`
+        focus: `hsla(var(--sk-theme-1-hsl), .6)`
       },
       margin: {
         0.1: '0.1rem',

@@ -8,10 +8,6 @@
   :root {
     --sk-theme-1-hsl: 12, 94%, 62%;
   }
-  /* *:focus {
-    @apply outline outline-2 outline-primary-hsl;
-    transition: all 0.5s;
-  } */
   html {
     font-family:
       'Overpass',
@@ -35,7 +31,7 @@
   }
 
   a {
-    @apply shadow-link text-primary-hsl no-underline;
+    @apply text-primary-hsl no-underline shadow-link;
     /* transition: box-shadow 0.1s ease-in-out; */
   }
   /* a:visited {
@@ -43,6 +39,9 @@
   } */
   a:hover {
     @apply shadow-link-hover;
+  }
+  a:focus {
+    @apply outline outline-2 outline-focus transition-all duration-200;
   }
   /* a:active {
     @apply shadow-link-hover;

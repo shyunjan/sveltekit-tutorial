@@ -5,11 +5,10 @@ function createCount() {
 
   return {
     subscribe,
-    increment: () => update(n => ++n),
-    decrement: () => update(n => --n),
-    reset: () => set(0),
-  }
-
+    increment: () => update((n) => ++n),
+    decrement: () => update((n) => --n),
+    reset: () => set(0)
+  };
 }
 
 export const count = createCount();
