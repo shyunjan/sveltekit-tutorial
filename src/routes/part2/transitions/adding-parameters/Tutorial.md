@@ -17,3 +17,16 @@ Note that the transition is _reversible_ — if you toggle the checkbox while th
 
 ------
 # **Transition events**
+It can be useful to know when transitions are beginning and ending. Svelte dispatches events that you can listen to like any other DOM event:
+```svelte title="src/routes/part2/transitions/adding-parameters/+page.svelte" {3-6}
+<p
+  transition:fly={{ y: 200, duration: 2000 }}
+  on:introstart={() => (status = 'intro started')}
+  on:outrostart={() => (status = 'outro started')}
+  on:introend={() => (status = 'intro ended')}
+  on:outroend={() => (status = 'outro ended')}
+>
+  Flies in and out
+</p>
+```
+[Next: Global transitions](/part2/transitions/global)
