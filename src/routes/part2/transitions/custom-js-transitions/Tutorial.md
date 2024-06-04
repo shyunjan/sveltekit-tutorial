@@ -1,7 +1,7 @@
 ------
 # **Custom JS transitions**
 While you should generally use CSS for transitions as much as possible, there are some effects that can't be achieved without JavaScript, such as a typewriter effect:
-```js title="src/routes/part2/transitions/custom-css-transitions/+page.svelte" {7-16}
+```js title="src/routes/part2/transitions/custom-js-transitions/+page.svelte" {7-16}
 function typewriter(node, { speed = 1 }) {
   const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
   if (!valid) {
