@@ -10,6 +10,8 @@
     { done: false, description: 'feed the turtle' },
     { done: false, description: 'fix some bugs' }
   ]);
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="board">
@@ -32,15 +34,10 @@
     <h2>done</h2>
     <TodoList store={todos} done={true} />
   </div>
+</div>
 
-  <div class="mt-16 mb-8 relative" style="grid-column: 1/3;">
-    <p class="note">
-      <span>NOTE</span>
-      <code>duration</code> can also be a <code>d =&gt; milliseconds function</code>, where <code>d</code> is
-      the number of pixels the element has to travel. Note that all the transitions and animations are being
-      applied with CSS, rather than JavaScript, meaning they won't block (or be blocked by) the main thread.
-    </p>
-  </div>
+<div class="tutorial absolute top-[50%]">
+  <Tutorial />
 </div>
 
 <style>
