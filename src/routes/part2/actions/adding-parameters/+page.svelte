@@ -9,16 +9,22 @@
     const tooltip = tippy(node, options);
 
     return {
-			update(options: Partial<Props>) {
-				tooltip.setProps(options);
-			},
+      update(options: Partial<Props>) {
+        tooltip.setProps(options);
+      },
       destroy() {
         tooltip.destroy();
       }
     };
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <input bind:value={content} />
 
 <button use:tooltip={{ content, theme: 'material' }}> Hover me </button>
+
+<div class="tutorial">
+  <Tutorial />
+</div>

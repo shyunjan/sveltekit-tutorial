@@ -15,7 +15,6 @@
   function get_coords(e: PointerEvent) {
     const { clientX, clientY } = e;
     const { left, top } = canvas.getBoundingClientRect();
-    // console.debug(`left = ${left}, top = ${top}`);
     const x = clientX - left;
     const y = clientY - top;
     return { x, y };
