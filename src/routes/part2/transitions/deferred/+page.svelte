@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div class="tutorial absolute top-[50%]">
+<div class="tutorial absolute top-[40%]">
   <Tutorial />
 </div>
 
