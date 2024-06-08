@@ -45,7 +45,7 @@ When the track ends, be kind — rewind:
 ```
 The complete set of bindings for `<audio>` and `<video>` is as follows — seven _readonly_ bindings...
 - `duration` (readonly) — the total duration, in seconds
-- `buffered` (readonly) — an array of &amp;#123; start, end &amp;#125; objects
+- `buffered` (readonly) — an array of `&#123; start, end &#125;` objects
 - `seekable` (readonly) — ditto
 - `played` (readonly) — ditto
 - `seeking` (readonly) — boolean
@@ -58,6 +58,7 @@ The complete set of bindings for `<audio>` and `<video>` is as follows — seven
 - `paused` — this one should be self-explanatory
 - `volume` — a value between 0 and 1
 - `muted` — a boolean value where true is muted
+
 Videos additionally have readonly `videoWidth` and `videoHeight` bindings.
 
 [Next: Dimensions](/part2/advanced-bindings/dimensions)
