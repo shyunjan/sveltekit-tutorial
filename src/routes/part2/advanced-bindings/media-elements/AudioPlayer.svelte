@@ -34,13 +34,13 @@
     bind:currentTime={time}
     bind:duration
     bind:paused
-		on:play={e => {
-			const audio = e.currentTarget;
-			if (audio !== current) {
-				current?.pause();
-				current = audio;
-			}
-		}}
+    on:play={(e) => {
+      const audio = e.currentTarget;
+      if (audio !== current) {
+        current?.pause();
+        current = audio;
+      }
+    }}
     on:ended={() => {
       time = 0;
       paused = false;
