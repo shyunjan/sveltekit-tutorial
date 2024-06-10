@@ -1,5 +1,7 @@
 <script>
   import Card from './Card.svelte';
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <main>
@@ -21,6 +23,10 @@
 
   <Card />
 </main>
+
+<div class="tutorial">
+  <Tutorial />
+</div>
 
 <style>
   main {
