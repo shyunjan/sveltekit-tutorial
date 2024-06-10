@@ -1,5 +1,7 @@
 <script>
   let flipped = false;
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="container">
@@ -19,6 +21,10 @@
       <div class="pattern"></div>
     </div>
   </button>
+</div>
+
+<div class="tutorial">
+  <Tutorial />
 </div>
 
 <style>
