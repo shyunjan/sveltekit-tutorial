@@ -65,6 +65,7 @@
     <button class="show-menu" on:click={() => (showMenu = !showMenu)}>
       {showMenu ? 'close' : 'menu'}
     </button>
+
     <button
       on:click={() => {
         canvas.clear();
@@ -100,7 +101,7 @@
   }
 
   .modal-background {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
