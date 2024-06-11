@@ -5,7 +5,7 @@ In a [previous exercise](https://learn.svelte.dev/tutorial/onmount), we learned 
 But the example is buggy — it's using `document.querySelector('canvas')`, which will always return the first `<canvas>` found on the page, which might not be the one belonging to our component.
 
 Instead, we can use the readonly `this` binding to get a reference to the element:
-```svelte title="src/routes/part2/advanced-bindings/this/+page.svelte" {6}#red /let canvas;/ /bind:this={canvas}/
+```svelte title="src/routes/part2/advanced-bindings/this/+page.svelte" {6}#del /let canvas;/ /bind:this={canvas}/
 <script>
   ...
   let canvas;

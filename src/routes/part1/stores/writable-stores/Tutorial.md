@@ -54,7 +54,7 @@ You now declared `unsubscribe`, but it still needs to be called, for example thr
 <h1>The count is {count_value}</h1>
 ```
 It starts to get a bit boilerplatey though, especially if your component subscribes to multiple stores. Instead, Svelte has a trick up its sleeve — you can reference a store value by prefixing the store name with `$`:
-```svelte title="src/routes/part1/stores/writable-stores/+page.svelte" {2,8,14, 10-12}#red /$count/
+```svelte title="src/routes/part1/stores/writable-stores/+page.svelte" {2,8,14, 10-12}#del /$count/
 <script>
   import { onDestroy } from 'svelte';
   import { count } from './stores.js';

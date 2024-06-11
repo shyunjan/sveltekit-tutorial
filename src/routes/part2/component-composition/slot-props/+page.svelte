@@ -1,6 +1,8 @@
 <script>
   import FilterableList from './FilterableList.svelte';
   import { colors } from './colors.js';
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="tutorial">
@@ -30,6 +32,10 @@
     <span class="hsl">{row.hsl}</span>
   </div>
 </FilterableList>
+
+<div class="tutorial">
+  <Tutorial />
+</div>
 
 <style>
   .row {
