@@ -26,14 +26,14 @@ With `bind:value`, Svelte takes care of it for you:
   <input type="range" bind:value={b} min="0" max="10" />
 </label>
 ```
-...
+.
 ------
 # **Checkbox inputs**
 Checkboxes are used for toggling between states. Instead of binding to `input.value`, we bind to `input.checked`:
 ```svelte title="src/routes/part1/bindings/+page.svelte" /bind:/
 <input type="checkbox" bind:checked={yes} />
 ```
-...
+.
 ------
 # **Select bindings**
 We can also use `bind:value` with `<select>` elements:

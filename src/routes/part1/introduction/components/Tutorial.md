@@ -25,7 +25,7 @@ Inside the curly braces, we can put any JavaScript we want. Try changing `name` 
 ```svelte title="src/routes/part1/introduction/+page.svelte" "{name.toUpperCase()}"
 <h1>Hello {name.toUpperCase()}!</h1>
 ```
-...
+.
 ___
   
 # **Dynamic attributes** 
@@ -52,7 +52,7 @@ It's not uncommon to have an attribute where the name and value are the same, li
 ```svelte title="src/routes/part1/introduction/+page.svelte" "{src}"
 <img {src} alt="{name} dances." />
 ```
-...
+.
 ___
 
 # **Styling**
