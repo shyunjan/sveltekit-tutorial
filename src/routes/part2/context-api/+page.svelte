@@ -14,16 +14,10 @@
   function jitter(amount: number) {
     return amount * (random() - 0.5);
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-<div class="tutorial">
-  Like <a href="https://learn.svelte.dev/tutorial/onmount" target="_blank">lifecycle functions</a>,
-  <code>setContext</code> and <code>getContext</code> must be called during component initialisation. 
-  (The context key (<code >'canvas'</code > in this case) can be anything you like, including 
-  non-strings, which is useful for controlling who can access the context.) Your context object can 
-  include anything, including stores. This allows you to pass values that change over time to child 
-  components.
-</div>
 <div class="container">
   <Canvas width={800} height={1200}>
     {#each Array(12) as _, c}
@@ -37,6 +31,10 @@
       {/each}
     {/each}
   </Canvas>
+</div>
+
+<div class="tutorial">
+  <Tutorial />
 </div>
 
 <style>
