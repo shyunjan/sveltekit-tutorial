@@ -4,8 +4,6 @@
   let y = 0;
   let body: HTMLElement;
 
-  import Tutorial from './Tutorial.md';
-
   function bindBody(node: HTMLElement) {
     body = node;
     body.style.height = '400vw';
@@ -22,6 +20,8 @@
       }
     };
   });
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <!-- <svelte:body />는 다음 장에 나온다 -->
