@@ -5,12 +5,12 @@
   //   window.document.body.style.overflow = 'visible';
   // });
 
-  function changeStyle(node: HTMLElement) {
-    node.style.overflow = 'visible';
-  }
+  // function changeStyle(node: HTMLElement) {
+  //   node.style.overflow = 'visible';
+  // }
 </script>
 
-<svelte:body use:changeStyle />
+<!-- <svelte:body use:changeStyle /> -->
 
 <div class="mx-auto my-2 flex max-h-full max-w-2xl flex-col justify-center gap-2">
   <h1 class="font-bold">Welcome to SvelteKit</h1>
