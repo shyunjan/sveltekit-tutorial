@@ -2,6 +2,8 @@
   let selection: string | undefined = '';
 
   const handleSelectionChange = (e: Event) => (selection = document.getSelection()?.toString());
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <svelte:document on:selectionchange={handleSelectionChange} />
@@ -10,8 +12,5 @@
 <p>Selection: {selection}</p>
 
 <div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    Avoid <code>mouseenter</code> and <code>mouseleave</code> handlers on this element, as these events are not fired on <code>document</code> in all browsers. Use <code>&lt;svelte:body&gt;</code> instead.
-  </p>
+  <Tutorial />
 </div>
