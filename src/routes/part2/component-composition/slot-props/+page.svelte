@@ -5,14 +5,6 @@
   import Tutorial from './Tutorial.md';
 </script>
 
-<div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    Named slots can also have props; use the <code>let</code> directive on an element with a
-    <code>slot="..."</code> attribute, instead of on the component itself.
-  </p>
-</div>
-
 <FilterableList data={colors} field="name" let:item={row}>
   <!-- let:item={row} 부분은 row 변수의 선언문이지 item의 선언문이 아님에 주의. item은 component(FilterableList) 내부에서 이미 선언하고 slot에서 노출하고 있는 변수다 -->
 
@@ -44,7 +36,7 @@
     grid-template-columns: 2em 4fr 3fr;
     gap: 1em;
     padding: 0.1em;
-    background: var(--bg-1);
+    background: hsl(var(--fg-1));
     border-radius: 0.2em;
   }
 
@@ -53,7 +45,7 @@
   }
 
   .row:not(header):hover {
-    background: var(--bg-2);
+    background: hsl(var(--fg-2));
   }
 
   .color {

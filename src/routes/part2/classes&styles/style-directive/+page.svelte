@@ -69,7 +69,7 @@
     top: 0;
     backface-visibility: hidden;
     border-radius: 2em;
-    border: 1px solid var(--fg-2);
+    border: 1px solid hsl(var(--fg-2));
     box-sizing: border-box;
     padding: 2em;
   }
@@ -89,7 +89,7 @@
 
   .symbol {
     font-size: 30em;
-    color: var(--fg-1);
+    color: hsl(var(--bg-1));
   }
 
   .pattern {

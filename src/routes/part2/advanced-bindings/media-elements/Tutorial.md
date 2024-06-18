@@ -62,3 +62,9 @@ The complete set of bindings for `<audio>` and `<video>` is as follows — seven
 Videos additionally have readonly `videoWidth` and `videoHeight` bindings.
 
 [Next: Dimensions](/part2/advanced-bindings/dimensions)
+
+------
+# **Sharing code**
+
+------
+# **Exports**

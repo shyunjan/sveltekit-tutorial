@@ -86,7 +86,7 @@
           );
         }}
       >
-        <div class="progress" style="--progress: {time / duration}%" />
+        <div class="progress" style="--progress: {duration ? time / duration : 0}%" />
       </div>
       <span>{duration ? format(duration) : '--:--'}</span>
     </div>
@@ -101,14 +101,14 @@
     gap: 1em;
     padding: 0.5em 1em 0.5em 0.5em;
     border-radius: 2em;
-    background: var(--bg-1);
+    background: hsl(var(--bg-3));
     transition: filter 0.2s;
-    color: var(--fg-3);
+    color: var(--sk-back-4);
     user-select: none;
   }
 
   .player:not(.paused) {
-    color: var(--fg-1);
+    color: hsl(var(--sk-theme-1-hsl));
     filter: drop-shadow(0.5em 0.5em 1em rgba(0, 0, 0, 0.1));
   }
 
@@ -152,7 +152,7 @@
   .slider {
     flex: 1;
     height: 0.5em;
-    background: var(--bg-2);
+    background: var(--sk-back-6);
     border-radius: 0.5em;
     overflow: hidden;
   }
@@ -160,6 +160,6 @@
   .progress {
     width: calc(100 * var(--progress));
     height: 100%;
-    background: var(--bg-3);
+    background: hsl(var(--sk-theme-1-hsl));
   }
 </style>

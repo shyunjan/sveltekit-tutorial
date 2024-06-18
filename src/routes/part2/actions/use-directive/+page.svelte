@@ -114,7 +114,7 @@
 
   .menu {
     position: relative;
-    background: var(--bg-2);
+    background: hsl(var(--bg-3));
     width: calc(100% - 2em);
     max-width: 28em;
     padding: 1em 1em 0.5em 1em;

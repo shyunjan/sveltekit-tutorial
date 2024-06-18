@@ -131,9 +131,9 @@
   }
 
   .eliza span {
-    background-color: var(--bg-1);
+    background-color: hsl(var(--bg-1));
     border-radius: 1em 1em 1em 0;
-    color: var(--fg-1);
+    color: hsl(var(--fg-1));
   }
 
   .user span {
@@ -149,7 +149,7 @@
 
   @media (min-width: 400px) {
     .phone {
-      background: var(--bg-2);
+      background: hsl(var(--bg-2));
       position: relative;
       font-size: min(2.5vh, 1rem);
       width: auto;
