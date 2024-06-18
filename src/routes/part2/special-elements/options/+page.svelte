@@ -7,7 +7,7 @@
     { id: 3, done: false, text: 'mow the lawn' }
   ];
 
-  function toggle(toggled: { id: number; done: boolean; text: String; }) {
+  function toggle(toggled: { id: number; done: boolean; text: String }) {
     todos = todos.map((todo) => {
       if (todo === toggled) {
         // return a new object
@@ -22,6 +22,8 @@
       return todo;
     });
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="centered">
@@ -35,21 +37,7 @@
 </div>
 
 <div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    You can shorten <code>&lt;svelte:options immutable=&#123true&#125</code> /&gt; to <code>&lt;svelte:options immutable/&gt;</code> if you prefer.
-  </p>
-  <p>Now, when you toggle todos by clicking on them, only the updated component flashes.</p>
-  <p>The options that can be set here are:</p>
-  <ul>
-    <li><code>immutable={true}</code> — you never use mutable data, so the compiler can do simple referential equality checks to determine if values have changed</li>
-    <li><code>immutable={false}</code> — the default. Svelte will be more conservative about whether or not mutable objects have changed</li>
-    <li><code>accessors={true}</code> — adds getters and setters for the component's props</li>
-    <li><code>accessors={false}</code> — the default</li>
-    <li><code>namespace="..."</code> — the namespace where this component will be used, most commonly <code>"svg"</code></li>
-    <li><code>customElement="..."</code> — the name to use when compiling this component as a custom element</li>
-  </ul>
-  <p>Consult the <a href="https://svelte.dev/docs" target="_blank">API reference</a> for more information on these options.</p>
+  <Tutorial />
 </div>
 
 <style>
