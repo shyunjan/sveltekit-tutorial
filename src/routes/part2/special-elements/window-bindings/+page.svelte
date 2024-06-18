@@ -15,8 +15,7 @@
     return () => {
       if (body) {
         body.style.height = '100%';
-        body.style.minHeight = '100vh';
-        body.style.background = 'none';
+        body.style.background = '';
       }
     };
   });
@@ -31,7 +30,7 @@
 
 <span>depth: {y}px</span>
 
-<div class="tutorial fixed top-[50%] text-mystic-600">
+<div class="tutorial fixed top-[50%] opacity-80">
   <Tutorial />
 </div>
 

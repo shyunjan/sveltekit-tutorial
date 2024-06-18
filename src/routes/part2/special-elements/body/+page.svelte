@@ -48,7 +48,7 @@
     transform: translate(-15%, 0) rotate(0deg);
   }
 
-  :global(body) {
+  /* :global(body) {
     overflow: hidden;
-  }
+  } */
 </style>
