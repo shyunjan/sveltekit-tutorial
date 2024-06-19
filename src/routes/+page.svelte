@@ -246,7 +246,7 @@
     <li class="mb-4 ml-10 mr-0 mt-2">
       <h3 class="mb-6">Introduction</h3>
       <ul>
-        <li class="ml-10"><a href="/">What is SvelteKit?</a></li>
+        <li class="ml-10"><a href="/part3/introduction">What is SvelteKit?</a></li>
       </ul>
     </li>
     <li class="mb-4 ml-10 mr-0 mt-2">
