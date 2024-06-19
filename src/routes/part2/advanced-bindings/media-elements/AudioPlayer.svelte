@@ -101,14 +101,14 @@
     gap: 1em;
     padding: 0.5em 1em 0.5em 0.5em;
     border-radius: 2em;
-    background: hsl(var(--bg-3));
+    background: hsl(var(--fg-1));
     transition: filter 0.2s;
-    color: var(--sk-back-4);
+    color: hsl(var(--fg-3));
     user-select: none;
   }
 
   .player:not(.paused) {
-    color: hsl(var(--sk-theme-1-hsl));
+    color: hsl(var(--bg-1));
     filter: drop-shadow(0.5em 0.5em 1em rgba(0, 0, 0, 0.1));
   }
 

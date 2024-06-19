@@ -65,6 +65,68 @@ Videos additionally have readonly `videoWidth` and `videoHeight` bindings.
 
 ------
 # **Sharing code**
+In all the examples we've seen so far, the `<script>` block contains code that runs when each component instance is initialised. For the vast majority of components, that's all you'll ever need.
 
+Very occasionally, you'll need to run some code outside of an individual component instance. For example: returning to our custom audio player from a [previous exercise](https://learn.svelte.dev/tutorial/media-elements), you can play all four tracks simultaneously. It would be better if playing one stopped all the others.
+
+We can do that by declaring a `<script context="module">` block. Code contained inside it will run once, when the module first evaluates, rather than when a component is instantiated. Place this at the top of <code data-file="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte">AudioPlayer.svelte</code> (note that this is a _separate_ script tag):
+```svelte title="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte" /<script context="module">/ "</script>" {2}
+<script context="module">
+  let current;
+</script>
+```
+It's now possible for the components to 'talk' to each other without any state management:
+```svelte title="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte" {7-12} /  on:play={(e) => {/ /  }} / 
+<audio
+  {src}
+  bind:currentTime={time}
+  bind:duration
+  bind:paused
+  on:play={(e) => {
+    const audio = e.currentTarget;
+
+    if (audio !== current) {
+      current?.pause();
+      current = audio;
+    }
+  }} 
+  on:ended={() => {
+    time = 0;
+    paused = false;
+  }}
+/>
+```
+.
 ------
 # **Exports**
+Anything exported from a `context="module"` script block becomes an export from the module itself. Let's export a `stopAll` function:
+```svelte title="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte" {5} /  export function stopAll() {/ /  }/
+<script context="module">
+  let current;
+
+  export function stopAll() {
+    current?.pause();
+  }
+</script>
+```
+We can now import `stopAll` in <code data-file="src/routes/part2/advanced-bindings/media-elements/+page.svelte">App.svelte</code>...and use it in an event handler:
+```svelte title="src/routes/part2/advanced-bindings/media-elements/+page.svelte" /{ stopAll }/ /  <button on:click={stopAll}>/ "  </button>" {13}
+<script>
+  import AudioPlayer, { stopAll } from './AudioPlayer.svelte';
+  import { tracks } from './tracks.js';
+</script>
+...
+<div class="centered">
+  {#each tracks as track}
+    <AudioPlayer {...track} />
+  {/each}
+  <br />
+
+  <button on:click={stopAll}>
+    Stop All
+  </button>
+</div>
+```
+> You can't have a default export, because the component _is_ the default export.
+
+[Next: Miscellaneous](/part2/miscellaneous)
