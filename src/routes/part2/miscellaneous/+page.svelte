@@ -3,6 +3,8 @@
     firstname: 'Ada',
     lastname: 'Lovelace'
   };
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <label>
@@ -20,3 +22,7 @@
 {@debug user}
 
 <h1>Hello {user.firstname}!</h1>
+
+<div class="tutorial">
+  <Tutorial />
+</div>
