@@ -2,7 +2,7 @@
   import Nested from './components/Nested.svelte';
   import Tutorial from './components/Tutorial.md';
   let name = 'Svelte';
-  let src = '/image.gif';
+  let src = '/image/image.gif';
   let string = `this string contains some <strong>HTML TAG!!!</strong>`;
 </script>
 
