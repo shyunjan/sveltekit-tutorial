@@ -2,7 +2,7 @@
   import Tutorial from './Tutorial.md';
 </script>
 
-<h1>Welcome to SvelteKit</h1>
+<center><h1>Welcome to SvelteKit</h1></center>
 
 <div class="tutorial">
   <Tutorial />
