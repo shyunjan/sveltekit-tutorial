@@ -1,7 +1,2 @@
-<script lang="ts">
-  import Tutorial from './Tutorial.md';
-</script>
-
-<div class="tutorial">
-  <Tutorial />
-</div>
+<h1>Home</h1>
+<p>this is the home page.</p>
