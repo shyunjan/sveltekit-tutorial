@@ -1,18 +1,4 @@
-<script lang="ts">
-  // import { onMount } from 'svelte';
-
-  // onMount(() => {
-  //   window.document.body.style.overflow = 'visible';
-  // });
-
-  // function changeStyle(node: HTMLElement) {
-  //   node.style.overflow = 'visible';
-  // }
-</script>
-
-<!-- <svelte:body use:changeStyle /> -->
-
-<div class="mx-auto my-2 flex max-h-full max-w-2xl flex-col justify-center gap-2">
+<div class="mx-auto my-16 flex max-h-full max-w-2xl flex-col justify-center gap-2">
   <h1 class="font-bold">Welcome to SvelteKit</h1>
   <div class="mb-2 mt-4">
     <p>
@@ -252,7 +238,7 @@
     <li class="mb-4 ml-10 mr-0 mt-2">
       <h3 class="mb-6">Routing</h3>
       <ul>
-        <li class="ml-10"><a href="/part3/routing/about">Pages</a></li>
+        <li class="ml-10"><a href="/part3/routing/pages">Pages</a></li>
         <li class="ml-10"><a href="/part3/routing/layouts">Layouts</a></li>
         <li class="ml-10"><a href="/part3/routing/parameters">Route parameters</a></li>
       </ul>
