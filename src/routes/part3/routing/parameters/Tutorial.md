@@ -7,7 +7,7 @@ Let's create that file:
 <h1>blog.post</h1>
 ```
 
-We can now navigate from the `/part3/routing/parameters` page to individual blog posts. In the next chapter, we'll see how to load their content.
+We can now navigate from the `/part3/routing/parameters/blog` page to individual blog posts. In the next chapter, we'll see how to load their content.
 
 > Multiple route parameters can appear _within_ one URL segment, as long as they are separated by at least one static character: `foo/[bar]x[baz]` is a valid route where `[bar]` and `[baz]` are dynamic parameters.
 
