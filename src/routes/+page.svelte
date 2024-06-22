@@ -246,8 +246,8 @@
     <li class="mb-4 ml-10 mr-0 mt-2">
       <h3 class="mb-6">Loading data</h3>
       <ul>
-        <li class="ml-10"><a href="/part3/routing/parameters">Page data</a></li>
-        <li class="ml-10"><a href="/part3/routing/parameters">Layout data</a></li>
+        <li class="ml-10"><a href="/part3/loading-data/page">Page data</a></li>
+        <li class="ml-10"><a href="/part3/loading-data/layout">Layout data</a></li>
       </ul>
     </li>
     <li class="mb-4 ml-10 mr-0 mt-2">
