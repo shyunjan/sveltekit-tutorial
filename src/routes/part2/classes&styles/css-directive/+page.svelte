@@ -70,8 +70,8 @@
 
   .front {
     background:
-      url(/svelte-logo.svg) no-repeat 5em 5em,
-      url(/svelte-logo.svg) no-repeat calc(100% - 5em) calc(100% - 5em);
+      url(/image/svelte-logo.svg) no-repeat 5em 5em,
+      url(/image/svelte-logo.svg) no-repeat calc(100% - 5em) calc(100% - 5em);
     background-size:
       8em 8em,
       8em 8em;
