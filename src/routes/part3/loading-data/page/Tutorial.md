@@ -74,4 +74,3 @@ export function load({ params }) {
 We'll learn more about error handling in later chapters.
 
 [Next: Layout data](/part3/loading-data/layout)
-
