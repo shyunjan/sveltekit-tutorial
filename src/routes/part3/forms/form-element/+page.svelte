@@ -1,6 +1,8 @@
 <script>
   export let data;
   export let form;
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 {#if form?.error}
@@ -32,22 +34,7 @@
 </div>
 
 <div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    Default actions cannot coexist with named actions.
-  </p>
-  <p class="note">
-    <span>NOTE</span>
-    The <code>action</code> attribute can be any URL — if the action was defined on another page,
-    you might have something like <code>/todos?/create</code>. Since the action is on this page, we
-    can omit the pathname altogether, hence the leading <code>?</code> character.
-  </p>
-  <p class="note">
-    <span>NOTE</span>
-    You can also return data from an action without wrapping it in <code>fail</code> — for example
-    to show a 'success!' message when data was saved — and it will be available via the 
-    <code>form</code> prop.
-  </p>
+  <Tutorial />
 </div>
 
 <style>
