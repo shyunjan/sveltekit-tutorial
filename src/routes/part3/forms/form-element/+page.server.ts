@@ -29,14 +29,14 @@ export const actions = {
       return fail(422, {
         description: data.get('description') as string,
         error: error.message
-      });      
+      });
     }
 
     return { success: true, id: cookies.get('userid') };
-  }, 
+  },
 
   delete: async ({ cookies, request }) => {
     const data = await request.formData();
     db.deleteTodo(cookies.get('userid') || '', data.get('id') as string);
   }
-} 
+};
