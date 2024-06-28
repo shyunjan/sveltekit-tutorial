@@ -12,14 +12,14 @@
 {/if}
 
 <div class="centered">
-  <h1>todos</h1>
+  <h1 class="mb-6">todos</h1>
   <form method="POST" action="?/create">
     <label>
       add a todo:
       <input name="description" autocomplete="off" required value={form?.description ?? ''} />
     </label>
   </form>
-  <ul class="todos">
+  <ul class="todos my-6 block">
     {#each data.todos as todo (todo.id)}
       <li>
         <form method="POST" action="?/delete" class="flex-row">
