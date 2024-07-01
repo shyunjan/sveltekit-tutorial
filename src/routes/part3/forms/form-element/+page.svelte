@@ -5,20 +5,22 @@
   import Tutorial from './Tutorial.md';
 </script>
 
-{#if form?.error}
-  <p class="error">{form.error}</p>
-{:else if form?.success}
-  <p class="success">saved user id: {form.id}</p>
-{/if}
-
 <div class="centered">
   <h1 class="mb-6">todos</h1>
+
+  {#if form?.error}
+    <p class="error">{form.error}</p>
+  {:else if form?.success}
+    <p class="success">saved user id: {form.id}</p>
+  {/if}
+
   <form method="POST" action="?/create">
     <label>
       add a todo:
       <input name="description" value={form?.description ?? ''} autocomplete="off" required />
     </label>
   </form>
+
   <ul class="todos my-6 block">
     {#each data.todos as todo (todo.id)}
       <li>
