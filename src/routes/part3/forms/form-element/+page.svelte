@@ -34,7 +34,7 @@
   </ul>
 </div>
 
-<div class="tutorial">
+<div class="tutorial absolute top-[30%]">
   <Tutorial />
 </div>
 

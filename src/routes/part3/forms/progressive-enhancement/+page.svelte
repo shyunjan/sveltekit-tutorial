@@ -37,11 +37,11 @@
     <label>
       add a todo:
       <input
+        disabled={creating}
         name="description"
+        value={form?.description ?? ''}
         autocomplete="off"
         required
-        disabled={creating}
-        value={form?.description ?? ''}
       />
     </label>
   </form>
@@ -73,7 +73,7 @@
   {/if}
 </div>
 
-<div class="tutorial">
+<div class="tutorial absolute top-[30%]">
   <Tutorial />
 </div>
 
