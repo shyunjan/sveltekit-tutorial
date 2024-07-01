@@ -87,7 +87,98 @@ Next, we want to create a form for each todo, complete with a hidden `&lt;input&
   {/each}
 </ul>
 ```
-
+.
 ------
 # **Validation**
+The first line of defense is the browser's [built-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation), which makes it easy to, for example, mark an `&lt;input&gt;` as required:
+```svelte title="src/routes/part3/forms/form-element/+page.svelte" /required/
+<form method="POST" action="?/create">
+  <label>
+    add a todo:
+    <input 
+      name="description" 
+      autocomplete="off" 
+      required
+    />
+  </label>
+</form>
+```
+Try hitting Enter while the `&lt;input&gt;` is empty.
 
+This kind of validation is helpful, but insufficient. Some validation rules (e.g. uniqueness) can't be expressed using `&lt;input&gt;` attributes, and in any case, if the user is an elite hacker they might simply delete the attributes using the browser's devtools. To guard against these sorts of shenanigans, you should always use server-side validation.
+
+In <code data-file="src/lib/server/database.js">src/lib/server/database.js</code>, validate that the description exists and is unique:
+```js title="src/lib/server/database.js" {3,9} /  if (description === '') {/ /  } / /  if (todos.find(todo => todo.description === description)) {/ 
+export function createTodo(userid, description) {
+  if (description === '') {
+    throw new Error('todo must have a description');
+  } 
+
+  const todos = db.get(userid);
+
+  if (todos.find(todo => todo.description === description)) {
+    throw new Error('todos must be unique');
+  } 
+
+  const id = crypto.randomUUID();
+  todos.push({
+    id,
+    description,
+    done: false
+  });
+
+  return { id };
+}
+```
+Try submitting a duplicate todo. Yikes! SvelteKit takes us to an unfriendly-looking error page. On the server, we see a 'todos must be unique' error, but SvelteKit hides unexpected error messages from users because they often contain sensitive data.
+
+It would be much better to stay on the same page and provide an indication of what went wrong so that the user can fix it. To do this, we can use the `fail` function to return data from the action along with an appropriate HTTP status code:
+```js title="src/routes/part3/forms/form-element/+page.server.ts" {1,13-16} /    try {/ /    } catch (error) {/ /    } /
+import { fail } from '@sveltejs/kit';
+import * as db from '$lib/server/database.js';
+
+export function load({ cookies }) { ... }
+
+export const actions = {
+  create: async ({ cookies, request }) => {
+    const data = await request.formData();
+
+    try {
+      db.createTodo(cookies.get('userid'), data.get('description'));
+    } catch (error) {
+      return fail(422, {
+        description: data.get('description'),
+        error: error.message
+      });
+    } 
+  }
+```
+In <code data-file="src/routes/part3/forms/form-element/+page.svelte">src/routes/part3/forms/form-element/+page.svelte</code>, we can access the returned value via the `&lt;form&gt;` prop, which is only ever populated after a form submission:
+```svelte title="src/routes/part3/forms/form-element/+page.svelte" {10} /export let form;/ /{#if form?.error}/ "  {/if}" /value={form?.description ?? ''}/
+<script>
+  export let data;
+  export let form;
+</script>
+
+<div class="centered">
+  <h1>todos</h1>
+
+  {#if form?.error}
+    <p class="error">{form.error}</p>
+  {/if}
+
+  <form method="POST" action="?/create">
+    <label>
+      add a todo:
+      <input 
+        name="description" 
+        value={form?.description ?? ''}
+        autocomplete="off" 
+        required 
+      />
+    </label>
+  </form>
+```
+> You can also return data from an action _without_ wrapping it in `fail` — for example to show a 'success!' message when data was saved — and it will be available via the `&lt;form&gt;` prop.
+
+[Next: Progressive enhancement](/part3/forms/progressive-enhancement)

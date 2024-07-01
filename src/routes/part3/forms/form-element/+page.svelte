@@ -16,7 +16,7 @@
   <form method="POST" action="?/create">
     <label>
       add a todo:
-      <input name="description" autocomplete="off" required value={form?.description ?? ''} />
+      <input name="description" value={form?.description ?? ''} autocomplete="off" required />
     </label>
   </form>
   <ul class="todos my-6 block">
