@@ -6,6 +6,6 @@ We've already got a `handleKeydown` function declared — now all we need to do 
 ```svelte title="src/routes/part2/special-elements/window/+page.svelte" /on:keydown={handleKeydown}/
 <svelte:window on:keydown={handleKeydown} />
 ```
-> As with DOM elements, you can add [event modifiers](https://learn.svelte.dev/tutorial/event-modifiers) like `preventDefault`.
+> As with DOM elements, you can add [event modifiers](/part1/events/modifiers) like `preventDefault`.
 
 [Next: &amp;lt;svelte:window&amp;gt; bindings](/part2/special-elements/window-bindings)

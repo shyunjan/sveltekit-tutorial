@@ -26,7 +26,7 @@ On the right(below), in the file tree viewer, you'll see a handful of files that
 
 &lt;code data-file="vite.config.ts"&gt;vite.config.js&lt;/code&gt; contains the [Vite](https://vitejs.dev/) configuration. Because SvelteKit uses Vite, you can use [Vite features](https://vitejs.dev/guide/features.html) like hot module replacement, TypeScript support, static asset handling and so on.
 
-`src` is where your app's source code goes. <code data-file="src/app.html">src/app.html</code> is your page template (SvelteKit replaces the `%sveltekit.head%` and `%sveltekit.body%` as appropriate), and `src/routes` defines the [routes](https://learn.svelte.dev/tutorial/pages) of your app.
+`src` is where your app's source code goes. <code data-file="src/app.html">src/app.html</code> is your page template (SvelteKit replaces the `%sveltekit.head%` and `%sveltekit.body%` as appropriate), and `src/routes` defines the [routes](/part3/routing/pages) of your app.
 
 Finally, `static` contains any assets (like a `favicon.png` or a `robots.txt`) that should be included when your app is deployed.
 

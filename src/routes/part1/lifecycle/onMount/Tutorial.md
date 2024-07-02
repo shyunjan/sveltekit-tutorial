@@ -19,7 +19,7 @@ In this exercise, we have a `<canvas>` that we'd like to animate, using the `pai
   });  
 </script>
 ```
-> In a [later exercise](https://learn.svelte.dev/tutorial/bind-this), we'll learn how to get an element reference without using `document.querySelector`.
+> In a [later exercise](/part2/advanced-bindings/this), we'll learn how to get an element reference without using `document.querySelector`.
 
 So far so good — you should see gently undulating colours in the shape of the Svelte logo. But there's one problem — the loop will continue even after the component has been destroyed. To fix that, we need to return a cleanup function from `onMount`:
 ```svelte title="src/routes/part1/lifecycle/onMount/+page.svelte" /let/ /frame = / /return () => {/ /cancelAnimationFrame(frame);/ /};/

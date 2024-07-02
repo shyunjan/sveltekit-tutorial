@@ -1,6 +1,6 @@
 ------
 # **&amp;lt;svelte:element&amp;gt;**
-Similarly, we don't always know in advance what kind of DOM element to render. `<svelte:element>` comes in handy here. As with the [previous exercise](https://learn.svelte.dev/tutorial/svelte-component), we can replace a long sequence of `if` blocks with a single dynamic element:
+Similarly, we don't always know in advance what kind of DOM element to render. `<svelte:element>` comes in handy here. As with the [previous exercise](/part2/special-elements/component), we can replace a long sequence of `if` blocks with a single dynamic element:
 ```svelte title="src/routes/part2/special-elements/element/+page.svelte" {7-9}
 <select bind:value={selected}>
   {#each options as option}

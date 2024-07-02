@@ -26,7 +26,7 @@ Then, add an `on:message` handler in <code data-file="src/routes/part1/events/co
 # **Event forwarding**
 Unlike DOM events, component events don't _bubble_. If you want to listen to an event on some deeply nested component, the intermediate components must _forward_ the event.
 
-In this case, we have the same <code data-file="src/routes/part1/events/component-events/+page.svelte">App.svelte</code> and <code data-file="src/routes/part1/events/component-events/Inner.svelte">Inner.svelte</code> as in the [previous chapter](https://learn.svelte.dev/tutorial/component-events), but there's now an <code data-file="src/routes/part1/events/component-events/Outer.svelte">Outer.svelte</code> component that contains `<Inner/>`.
+In this case, we have the same <code data-file="src/routes/part1/events/component-events/+page.svelte">App.svelte</code> and <code data-file="src/routes/part1/events/component-events/Inner.svelte">Inner.svelte</code> as in the previous chapter(**Component events**), but there's now an <code data-file="src/routes/part1/events/component-events/Outer.svelte">Outer.svelte</code> component that contains `<Inner/>`.
 
 An `on:message` event directive without a value means 'forward all `message` events'.
 ```svelte title="src/routes/part1/events/component-events/Outer.svelte" /on:message/

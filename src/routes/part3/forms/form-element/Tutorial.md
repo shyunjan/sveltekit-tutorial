@@ -1,6 +1,6 @@
 ------
 # **The &amp;lt;form&amp;gt; element**
-In the chapter on [loading data](https://learn.svelte.dev/tutorial/page-data), we saw how to get data from the server to the browser. Sometimes you need to send data in the opposite direction, and that's where `&lt;form&gt;` — the web platform's way of submitting data — comes in.
+In the chapter on [loading data](/part3/loading-data/page), we saw how to get data from the server to the browser. Sometimes you need to send data in the opposite direction, and that's where `&lt;form&gt;` — the web platform's way of submitting data — comes in.
 
 Let's build a todo app. We've already got an in-memory database set up in <code data-file="src/lib/server/database.js">src/lib/server/database.js</code>, and our `load` function in <code data-file="src/routes/part3/forms/form-element/+page.server.ts">src/routes/part3/forms/form-element/+page.server.ts</code> uses the [cookies](https://kit.svelte.dev/docs/load#cookies) API so that we can have a per-user todo list, but we need to add a `&lt;form&gt;` to create new todos:
 ```svelte title="src/routes/part3/forms/form-element/+page.svelte" /<form method="POST">/ "</form>" {4-10}

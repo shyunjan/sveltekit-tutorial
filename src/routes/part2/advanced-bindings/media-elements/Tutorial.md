@@ -1,5 +1,5 @@
 ------
-# **Media elements**
+# **<a id="media-elements">Media elements</a>**
 You can bind to properties of `<audio>` and `<video>` elements, making it easy to (for example) build custom player UI, like <code data-file="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte">AudioPlayer.svelte</code>.
 
 First, add the `<audio>` element along with its bindings (we'll use the shorthand form for `src`, `duration` and `paused`). Next, add an event handler to the `<button>` that toggles `paused`:
@@ -67,7 +67,7 @@ Videos additionally have readonly `videoWidth` and `videoHeight` bindings.
 # **Sharing code**
 In all the examples we've seen so far, the `<script>` block contains code that runs when each component instance is initialised. For the vast majority of components, that's all you'll ever need.
 
-Very occasionally, you'll need to run some code outside of an individual component instance. For example: returning to our custom audio player from a [previous exercise](https://learn.svelte.dev/tutorial/media-elements), you can play all four tracks simultaneously. It would be better if playing one stopped all the others.
+Very occasionally, you'll need to run some code outside of an individual component instance. For example: returning to our custom audio player from a [previous exercise](#media-elements), you can play all four tracks simultaneously. It would be better if playing one stopped all the others.
 
 We can do that by declaring a `<script context="module">` block. Code contained inside it will run once, when the module first evaluates, rather than when a component is instantiated. Place this at the top of <code data-file="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte">AudioPlayer.svelte</code> (note that this is a _separate_ script tag):
 ```svelte title="src/routes/part2/advanced-bindings/media-elements/AudioPlayer.svelte" /<script context="module">/ "</script>" {2}

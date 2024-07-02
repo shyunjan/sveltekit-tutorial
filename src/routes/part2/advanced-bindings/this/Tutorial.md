@@ -1,6 +1,6 @@
 ------
 # **This**
-In a [previous exercise](https://learn.svelte.dev/tutorial/onmount), we learned how to use the `onMount` lifecycle function to paint to a canvas.
+In a [previous exercise](/part1/lifecycle/onMount), we learned how to use the `onMount` lifecycle function to paint to a canvas.
 
 But the example is buggy — it's using `document.querySelector('canvas')`, which will always return the first `<canvas>` found on the page, which might not be the one belonging to our component.
 

@@ -15,7 +15,7 @@ function fade(node, { delay = 0, duration = 400 }) {
 The function takes two arguments — the node to which the transition is applied, and any parameters that were passed in — and returns a transition object which can have the following properties:
 - `delay` — milliseconds before the transition begins
 - `duration` — length of the transition in milliseconds
-- `easing` — a `p => t` easing function (see the chapter on [tweening](https://learn.svelte.dev/tutorial/tweens))
+- `easing` — a `p => t` easing function (see the chapter on [tweening](/part2/motion/tweens))
 - `css` — a `(t, u) => css` function, where `u === 1 - t`
 - `tick` — a `(t, u) => {...}` function that has some effect on the node
 The `t` value is `0` at the beginning of an intro or the end of an outro, and `1` at the end of an intro or beginning of an outro.

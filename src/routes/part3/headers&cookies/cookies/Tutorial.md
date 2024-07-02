@@ -1,6 +1,6 @@
 ------
 # **Reading and writing cookies**
-The [setHeaders](https://learn.svelte.dev/tutorial/headers) function can't be used with the `Set-Cookie` header. Instead, you should use the `cookies` API.
+The [setHeaders](/part3/headers&cookies/setting-headers) function can't be used with the `Set-Cookie` header. Instead, you should use the `cookies` API.
 
 In your `load` functions, you can read a cookie with `cookies.get(name, options)`:
 ```js title="src/routes/part3/headers&cookies/cookies/+page.server.js" /{ cookies }/ /const visited = cookies.get('visited');/

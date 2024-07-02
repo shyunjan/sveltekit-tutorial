@@ -1,4 +1,3 @@
-import { json } from '@sveltejs/kit';
 import * as database from '$lib/server/database';
 
 export async function PUT({ params, request, cookies }) {
