@@ -2,7 +2,7 @@
   import { page, navigating, updated } from '$app/stores';
 </script>
 
-<nav>
+<nav class="relative mb-6 flex gap-6 rounded bg-stone-100 p-6">
   <a href="/part3/stores/page" aria-current={$page.url.pathname === '/part3/stores/page'}>page</a>
   <a
     href="/part3/stores/navigating"
@@ -22,6 +22,7 @@
   <div class="toast">
     <p>
       A new version of the app is available
+
       <button on:click={() => location.reload()}>reload the page</button>
     </p>
   </div>
