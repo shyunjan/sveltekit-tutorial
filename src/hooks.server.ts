@@ -25,6 +25,8 @@ export async function handleFetch({ event, request, fetch }) {
   if (url.pathname === '/part4/hooks/handleFetch/api') {
     return await fetch('/part4/hooks/handleFetch/api-b');
   }
+
+  return await fetch(request);
 }
 
 // export function handleError({ event, error }: { event: RequestEvent<Partial<Record<string, string>>, string | null>, error: Error }) {
