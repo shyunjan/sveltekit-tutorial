@@ -9,6 +9,6 @@
 
 <slot />
 
-<div class="tutorial">
+<div class="tutorial absolute top-[20%]">
   <Tutorial />
 </div>
