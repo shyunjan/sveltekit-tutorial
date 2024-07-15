@@ -3,10 +3,11 @@
 
   let words = ['how', 'deep', 'does', 'the', 'rabbit', 'hole', 'go'];
 
-  console.debug(`$page.params.path.split('/') = ${$page.params.path.split('/')}`);
-
   // $: depth = $page.params.path.split('/').length;
-  /* path가 없는 경우에는 $page.params.path.split('/') = [""]이 되어서 length가 1이 된다. 그래서 .filter(Boolean)가 필요하다 */
+  /**
+   * 원문 예제에는 바로 위 라인의 코드가 사용되고 있지만 제대로 작동하지 않는다. 이유는 [...path]가 없는
+   * 경우에는 $page.params.path.split('/') = [""]이 되어서 length가 1이 된다. 그래서 아래 코드처럼
+   * .filter(Boolean)가 필요하다 */
   $: depth = $page.params.path.split('/').filter(Boolean).length;
   $: next = depth === words.length ? '/' : `/${words.slice(0, depth + 1).join('/')}`;
 
@@ -21,7 +22,7 @@
   <p><a href={`/part4/advanced-routing/rest-parameters/${next}`}>{words[depth] ?? '?'}</a></p>
 </div>
 
-<div class="tutorial">
+<div class="tutorial absolute top-[30%]">
   <Tutorial />
 </div>
 
