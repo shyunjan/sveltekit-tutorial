@@ -1,4 +1,8 @@
-<nav>
+<script>
+  import Tutorial from './Tutorial.md';
+</script>
+
+<nav class="relative mb-6 flex gap-6 rounded bg-stone-100 p-6">
   <a href="/part4/advanced-routing/breaking-out-of-layouts">Breaking out of layouts &gt; home</a>
   <a href="/part4/advanced-routing/breaking-out-of-layouts/a">a</a>
   <a href="/part4/advanced-routing/breaking-out-of-layouts/a/b">a/b</a>
@@ -7,6 +11,10 @@
 
 <div class="layout" data-name="root">
   <slot />
+</div>
+
+<div class="tutorial absolute top-[20%]">
+  <Tutorial />
 </div>
 
 <style>
@@ -36,24 +44,3 @@
     }
   }
 </style>
-
-<div class="tutorial">
-  <p>Ordinarily, a page inherits every layout above it, meaning that
-    <code>./a/b/c/+page.svelte</code> inherits four layouts:
-  </p>
-  <ul>
-    <li><code>./+layout.svelte</code></li>
-    <li><code>./a/+layout.svelte</code></li>
-    <li><code>./a/b/+layout.svelte</code></li>
-    <li><code>./a/b/c/+layout.svelte</code></li>
-  </ul>
-  <p>Occasionally, it's useful to break out of the current layout hierarchy. We can do that by
-    adding the <code>@</code> sign followed by the name of the parent segment to 'reset' to —
-    for example <code>+page@b.svelte</code> would put <code>/a/b/c</code> inside
-    <code>./a/b/+layout.svelte</code>, while <code>+page@a.svelte</code> would put it inside
-    <code>./a/+layout.svelte</code>.
-  </p>
-  <blockquote>
-    <p>The root layout applies to every page of your app, you cannot break out of it.</p>
-  </blockquote>
-</div>
