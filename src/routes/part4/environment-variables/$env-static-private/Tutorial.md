@@ -10,7 +10,6 @@ Environment variables — like API keys and database credentials — can be adde
 In this exercise, we want to allow the user to enter the website if they know the correct passphrase, using an environment variable.
 
 First, in <code data-file="/.env">.env</code>, add a new environment variable:
-
 ```bash title=".env" /"open sesame"/
 PASSPHRASE="open sesame"
 ```
