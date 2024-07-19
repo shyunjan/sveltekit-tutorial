@@ -12,7 +12,7 @@ In this exercise, we want to allow the user to enter the website if they know th
 First, in <code data-file="/.env">.env</code>, add a new environment variable:
 
 ```bash title=".env" /"open sesame"/
-PASSPHRASE="open sesame";
+PASSPHRASE="open sesame"
 ```
 
 Open <code data-file="src/routes/part4/environment-variables/$env-static-private/+page.server.ts">src/routes/part4/environment-variables/$env-static-private/+page.server.ts</code>. Import `PASSPHRASE` from `$env/static/private` and use it inside the [form action](/part3/forms/form-element):
