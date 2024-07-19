@@ -1,7 +1,6 @@
 <script lang="ts">
   export let form;
-
-  import Tutorial from './components/Tutorial.md';
+  import Tutorial from './Tutorial.md';
 </script>
 
 <form method="POST">
