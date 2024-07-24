@@ -1,10 +1,16 @@
 <script>
   let html = '<p>Write some text!</p>';
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-<div contenteditable bind:innerHTML={html} />
+<div bind:innerHTML={html} contenteditable></div>
 
 <pre>{html}</pre>
+
+<div class="tutorial">
+  <Tutorial />
+</div>
 
 <style>
   [contenteditable] {

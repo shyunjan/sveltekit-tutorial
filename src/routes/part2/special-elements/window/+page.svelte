@@ -4,18 +4,13 @@
 
   function handleKeydown(event: KeyboardEvent) {
     key = event.key;
-    keyCode = event.keyCode;
+    keyCode = event.keyCode ?? event.code;
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
-
-<div class="tutorial" style="display: inline; position: absolute;">
-  <p class="note">
-    <span>NOTE</span>
-    As with DOM elements, you can add <a href="https://learn.svelte.dev/tutorial/event-modifiers" target="_blank">event modifiers</a> like preventDefault.
-  </p>
-</div>
 
 <div class="Contents">
   {#if key}
@@ -24,6 +19,10 @@
   {:else}
     <p>Focus this window and press any key</p>
   {/if}
+</div>
+
+<div class="tutorial absolute top-[50%]">
+  <Tutorial />
 </div>
 
 <style>

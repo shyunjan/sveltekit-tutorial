@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="centered">
@@ -22,10 +23,10 @@
           headers: {
             'Content-Type': 'application/json'
           }
-        })
+        });
 
-        const {id} = await response.json();
-        data.todos = [ ...data.todos, { id, description, done: false }];
+        const { id } = await response.json();
+        data.todos = [...data.todos, { id, description, done: false }];
 
         input.value = '';
       }}
@@ -61,7 +62,7 @@
                   'Content-Type': 'application/json'
                 }
               });
-              data.todos = data.todos.filter(t => t.id !== todo.id);
+              data.todos = data.todos.filter((t) => t.id !== todo.id);
             }}
           />
         </label>
@@ -69,11 +70,9 @@
     {/each}
   </ul>
 </div>
-<div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    You should only mutate <code>data</code> in such a way that you'd get the same result by reloading the page.
-  </p>
+
+<div class="tutorial absolute top-[30%]">
+  <Tutorial />
 </div>
 
 <style>

@@ -1,41 +1,61 @@
 // import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-vercel'
-
+import adapter from '@sveltejs/adapter-vercel';
+// import preprocess from 'svelte-preprocess';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { mdsvex } from 'mdsvex';
+import mdsvexConfig from './mdsvex.config.js';
+
+/** @type {import('mdsvex').MdsvexOptions} */
+// const mdsvexOptions = {
+//   extensions: ['.svx'],
+// };
+// const mdsvexConfig = defineConfig(mdsvexOptions);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  extensions: ['.svelte', ...mdsvexConfig.extensions],
+
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
-  preprocess: [vitePreprocess({})],
+
+  // preprocess: [vitePreprocess({}), preprocess(mdsvex(mdsvexConfig))],
+  preprocess: [vitePreprocess({}), mdsvex(mdsvexConfig)],
+
+  // onwarn: (warning, handler) => {
+  //   console.debug(`warning.code = ${warning.code}`)
+  //   if (warning.code.toLowerCase().startWith(`a11y-`)) return;
+  //   handler(warning);
+  // },
 
   kit: {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
-    adapter: 
+    adapter:
       // adapter(), // as using @sveltejs/adapter-auto
       adapter({
-        runtime: 'edge',
+        runtime: 'edge'
         // maxDuration: // Defaults to 10 seconds for Hobby accounts, 15 for Pro and 900 for Enterprise
       }),
 
-		version: {
-			// ideally, this should be something deterministic like the output of `git rev-parse HEAD`
-			name: Date.now().toString(),
-	
-			// if undefined, no polling will occur
-			pollInterval: 1000
-		}
+    version: {
+      // ideally, this should be something deterministic like the output of `git rev-parse HEAD`
+      name: Date.now().toString(),
+
+      // if undefined, no polling will occur
+      pollInterval: 1000
+    }
   },
 
   vitePlugin: {
     // This enables compile-time warnings to be visible in the learn.svelte.dev editor
     onwarn: (warning, defaultHandler) => {
+      const warningCode = warning.code.toLowerCase();
+      if (warningCode === 'a11y-no-noninteractive-tabindex' || 'a11y-missing-attribute') return;
       console.log('svelte:warnings:%s', JSON.stringify(warning));
       defaultHandler(warning);
     }
-  },
+  }
 };
 
 export default config;

@@ -21,7 +21,7 @@
 
 <style>
   @font-face {
-    src: url('/Garamond Classico SC Regular.woff2') format('woff2');
+    src: url('/fonts/Garamond Classico SC Regular.woff2') format('woff2');
     font-family: 'Silian Rail';
     font-style: normal;
     font-weight: 400;

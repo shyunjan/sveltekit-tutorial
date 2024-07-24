@@ -15,16 +15,15 @@
       cancelAnimationFrame(frame);
     };
   });
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-<div class="tutorial">
-  <p class="note">
-    <span>NOTE</span>
-    In a <a href="https://learn.svelte.dev/tutorial/bind-this" target="_blank">later exercise</a>, 
-		we'll learn how to get an element reference without using document.querySelector.
-  </p>
-</div>
 <canvas width={32} height={32} />
+
+<div class="tutorial absolute top-[75%]">
+  <Tutorial />
+</div>
 
 <style>
   canvas {

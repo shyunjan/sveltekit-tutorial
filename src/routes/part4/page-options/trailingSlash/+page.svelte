@@ -1,1 +1,1 @@
-<h1>trailingSlash</h1>
+<h1>TrailingSlash &gt; Home</h1>

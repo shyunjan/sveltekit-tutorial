@@ -15,12 +15,18 @@
       clearInterval(interval);
     };
   });
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <h1>loading...</h1>
 
 {#key i}
-<p in:typewriter={{ speed: 10 }}>
-  {messages[i] || ''}
-</p>
+  <p in:typewriter={{ speed: 10 }}>
+    {messages[i] || ''}
+  </p>
 {/key}
+
+<div class="tutorial absolute top-[20%]">
+  <Tutorial />
+</div>

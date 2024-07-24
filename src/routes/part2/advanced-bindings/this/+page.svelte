@@ -17,10 +17,16 @@
       cancelAnimationFrame(frame);
     };
   });
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <!-- <canvas width={32} height={32} /> -->
 <canvas bind:this={canvas} width={32} height={32} />
+
+<div class="tutorial absolute top-[75%]">
+  <Tutorial />
+</div>
 
 <style>
   canvas {

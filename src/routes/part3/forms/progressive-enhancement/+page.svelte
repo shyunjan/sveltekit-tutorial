@@ -10,40 +10,43 @@
    * @type {string[]}
    */
   let deleting = [];
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-{#if form?.error}
-  <p class="error">{form.error}</p>
-{:else if form?.success}
-  <p class="success">saved user id: {form.id}</p>
-{/if}
-
-<form
-  method="POST"
-  action="?/create"
-  use:enhance={() => {
-    creating = true;
-    return async ({ update }) => {
-      await update();
-      creating = false;
-    };
-  }}
->
-  <label>
-    add a todo:
-    <input
-      name="description"
-      autocomplete="off"
-      required
-      disabled={creating}
-      value={form?.description ?? ''}
-    />
-  </label>
-</form>
-<br />
 <div class="centered">
   <h1>todos</h1>
-  <ul class="todos">
+
+  {#if form?.error}
+    <p class="error">{form.error}</p>
+  {:else if form?.success}
+    <p class="success">saved user id: {form.id}</p>
+  {/if}
+
+  <form
+    method="POST"
+    action="?/create"
+    use:enhance={() => {
+      creating = true;
+      return async ({ update }) => {
+        await update();
+        creating = false;
+      };
+    }}
+  >
+    <label>
+      add a todo:
+      <input
+        disabled={creating}
+        name="description"
+        value={form?.description ?? ''}
+        autocomplete="off"
+        required
+      />
+    </label>
+  </form>
+
+  <ul class="todos my-6 block">
     {#each data.todos.filter((todo) => !deleting.includes(todo.id)) as todo (todo.id)}
       <li in:fly={{ y: 20 }} out:slide>
         <form
@@ -56,6 +59,7 @@
               deleting = deleting.filter((id) => id !== todo.id);
             };
           }}
+          class="flex-row"
         >
           <input type="hidden" name="id" value={todo.id} />
           <span>{todo.description}</span>
@@ -69,23 +73,8 @@
   {/if}
 </div>
 
-<div class="tutorial">
-  <p class="note">
-    바로 이전 tutorial 과정(The &lt;form&gt; element, Named form actions, Validation)과 이번
-    장(progressive_enhancement)을 따로 분리한 이유는 이번 장부터는 form 태그를 통한 페이지 이동이
-    일어나지 않기 때문이다.<br/>
-    즉, 바로 이전 tutorial까지는 TODO를 생성하거나 삭제하면 form 태그의 해당 action(?/create 혹은 ?/delete)
-    페이지로 이동이 일어나면서 브라우저의 History가 쌓인다. 그러나 이번 장부터는 현재 페이지의
-    업데이트만 일어나기 때문에 페이지 이동이 없다. 자세한 내용은 해당
-    <a href="https://learn.svelte.dev/tutorial/progressive-enhancement">tutorial</a>을 읽어보자.
-  </p>
-  <p class="note">
-    <span>NOTE</span>
-    <code>use:enhance</code> is very customizable — you can <code>cancel()</code> submissions,
-    handle redirects, control whether the form is reset, and so on.
-    <a href="https://kit.svelte.dev/docs/modules#$app-forms-enhance" target="_blank">See the docs
-    </a> for full details.
-  </p>
+<div class="tutorial absolute top-[30%]">
+  <Tutorial />
 </div>
 
 <style>

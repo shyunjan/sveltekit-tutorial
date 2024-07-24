@@ -3,12 +3,15 @@
 
   let words = ['how', 'deep', 'does', 'the', 'rabbit', 'hole', 'go'];
 
-  console.debug(`$page.params.path.split('/') = ${$page.params.path.split('/')}`);
-
-  // $: depth = $page.params.path.split('/').length; 
-  /* path가 없는 경우에는 $page.params.path.split('/') = [""]이 되어서 length가 1이 된다. 그래서 .filter(Boolean)가 필요하다 */
+  // $: depth = $page.params.path.split('/').length;
+  /**
+   * 원문 예제에는 바로 위 라인의 코드가 사용되고 있지만 제대로 작동하지 않는다. 이유는 [...path]가 없는
+   * 경우에는 $page.params.path.split('/') = [""]이 되어서 length가 1이 된다. 그래서 아래 코드처럼
+   * .filter(Boolean)가 필요하다 */
   $: depth = $page.params.path.split('/').filter(Boolean).length;
   $: next = depth === words.length ? '/' : `/${words.slice(0, depth + 1).join('/')}`;
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="flex">
@@ -19,36 +22,8 @@
   <p><a href={`/part4/advanced-routing/rest-parameters/${next}`}>{words[depth] ?? '?'}</a></p>
 </div>
 
-<div class="tutorial">
-  <p>To match an unknown number of path segments, use a <code>[...rest]</code> parameter, so named
-    for its resemblance to
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters"
-      target="_blank">rest parameters in JavaScript</a>.
-  </p>
-  <p>Rename <code>src/routes/[path]</code> to <code>src/routes/[...path]</code>. The route now
-    matches any path.
-  </p>
-  <blockquote>
-    <p>Other, more specific routes will be tested first, making rest parameters useful as 'catch-all'
-      routes. For example, if you needed a custom 404 page for pages inside
-      <code>/categories/...</code>, you could add these files:
-    </p>
-    <div class="code-block"><pre class="language-diff"><code>src/routes/
-├ categories/
-│ ├ animal/
-│ ├ mineral/
-│ ├ vegetable/
-<span class="inserted">│ ├ [...catchall]/
-</span><span class="inserted">│ │ ├ +error.svelte
-</span><span class="inserted">│ │ └ +page.server.js</span></code></pre>
-    </div>
-    <p>Inside the <code>+page.server.js</code> file, <code>throw error(404)</code> inside
-      <code>load</code>.
-    </p>
-  </blockquote>
-  <p>Rest parameters do <em>not</em> need to go at the end — a route like
-    <code>/items/[...path]/edit</code> or <code>/items/[...path].json</code> is totally valid.
-  </p>
+<div class="tutorial absolute top-[30%]">
+  <Tutorial />
 </div>
 
 <style>

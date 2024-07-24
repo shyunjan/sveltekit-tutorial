@@ -4,9 +4,10 @@
   export let width = 100;
   export let height = 100;
 
-  let canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D;
-  let items: Set<Function> = new Set();
-  let scheduled = false;
+  let canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+    items: Set<Function> = new Set(),
+    scheduled = false;
 
   onMount(() => {
     ctx = canvas.getContext('2d')!;

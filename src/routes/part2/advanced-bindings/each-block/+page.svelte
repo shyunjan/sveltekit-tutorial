@@ -17,6 +17,8 @@
   }
 
   $: remaining = todos.filter((t) => !t.done).length;
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="centered">
@@ -37,14 +39,10 @@
   <button on:click={add}> Add new </button>
 
   <button on:click={clear}> Clear completed </button>
+</div>
 
-  <div class="tutorial">
-    <p class="note">
-      <span>NOTE</span>
-      Note that interacting with these <code>&lt;input&gt;</code> elements will mutate the array. If you
-      prefer to work with immutable data, you should avoid these bindings and use event handlers instead.
-    </p>
-  </div>
+<div class="tutorial absolute top-[50%]">
+  <Tutorial />
 </div>
 
 <style>
@@ -64,7 +62,7 @@
   input[type='text'] {
     flex: 1;
     padding: 0.5em;
-    margin: -0.2em 0;
+    margin: 0.1em 0;
     border: none;
   }
 </style>

@@ -5,10 +5,12 @@
     { x: 50, y: 50 },
     {
       stiffness: 0.1,
-      damping: 0.25,
+      damping: 0.25
     }
   );
   let size = spring(10);
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <svg
@@ -34,6 +36,10 @@
   </label>
 </div>
 
+<div class="tutorial absolute top-[50%]">
+  <Tutorial />
+</div>
+
 <style>
   svg {
     position: absolute;
@@ -49,7 +55,7 @@
 
   .controls {
     position: absolute;
-    top: 1em;
+    top: 5em;
     right: 1em;
     width: 200px;
     user-select: none;

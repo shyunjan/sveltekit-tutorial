@@ -15,41 +15,53 @@
     })
     .sort((a, b) => a.r - b.r);
 
+  let body: HTMLElement;
+
+  function bindBody(node: HTMLElement) {
+    body = node;
+    body.style.overflow = 'hidden';
+  }
+
   onMount(() => {
-    // window.document.body.style.overflow = 'hidden';
     const nav = window.document.body.getElementsByTagName('nav')[0];
     nav.style.display = 'none';
 
     let frame: number;
-    
+
     function loop() {
       frame = requestAnimationFrame(loop);
-      
+
       confetti = confetti.map((emoji) => {
         emoji.y += 0.3 * emoji.r;
         if (emoji.y > 120) emoji.y = -20;
         return emoji;
       });
     }
-    
+
     loop();
-    
+
     return () => {
       cancelAnimationFrame(frame);
       nav.style.display = 'flex';
-    }
+
+      if (body) {
+        body.style.overflow = '';
+      }
+    };
   });
-  
-  function changeStyle(node: HTMLElement) {
-    node.style.overflow = "hidden";
-  }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
-<svelte:body use:changeStyle />
+<svelte:body use:bindBody />
 
 {#each confetti as c}
   <span style="left: {c.x}%; top: {c.y}%; transform: scale({c.r})">{c.character}</span>
 {/each}
+
+<div class="tutorial contents">
+  <Tutorial />
+</div>
 
 <style>
   /* :global(body) {

@@ -6,6 +6,8 @@
   let next = 'x';
 
   $: winningLine = getWinningLine(squares);
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="container">
@@ -39,6 +41,10 @@
   </Board>
 </div>
 
+<div class="tutorial">
+  <Tutorial />
+</div>
+
 <style>
   .container {
     display: flex;
@@ -46,7 +52,7 @@
     gap: 1em;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 40vh;
     margin: 0 auto;
   }
 

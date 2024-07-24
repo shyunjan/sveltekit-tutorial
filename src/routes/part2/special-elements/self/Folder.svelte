@@ -14,7 +14,7 @@
 <button class:expanded on:click={toggle}>{name}</button>
 
 {#if expanded}
-  <ul>
+  <ul class="menu">
     {#each files as file}
       <li>
         {#if file.files}
@@ -32,7 +32,7 @@
     padding: 0 0 0 1.5em;
     background: url(/icons/folder.svg) 0 0.1em no-repeat;
     background-size: 1em 1em;
-    color: var(--fg-1);
+    color: hsl(var(--bg-2));
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -43,14 +43,15 @@
     background-image: url(/icons/folder-open.svg);
   }
 
-  ul {
+  .menu {
     padding: 0.2em 0 0 0.5em;
     margin: 0 0 0 0.5em;
     list-style: none;
     border-left: 1px solid rgba(128, 128, 128, 0.4);
+    display: block;
   }
 
-  li {
+  .menu li {
     padding: 0.2em 0;
   }
 </style>

@@ -1,5 +1,7 @@
 <script>
   let flipped = false;
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <div class="container">
@@ -19,6 +21,10 @@
       <div class="pattern"></div>
     </div>
   </button>
+</div>
+
+<div class="tutorial">
+  <Tutorial />
 </div>
 
 <style>
@@ -63,15 +69,15 @@
     top: 0;
     backface-visibility: hidden;
     border-radius: 2em;
-    border: 1px solid var(--fg-2);
+    border: 1px solid hsl(var(--fg-2));
     box-sizing: border-box;
     padding: 2em;
   }
 
   .front {
     background:
-      url(/svelte-logo.svg) no-repeat 5em 5em,
-      url(/svelte-logo.svg) no-repeat calc(100% - 5em) calc(100% - 5em);
+      url(/image/svelte-logo.svg) no-repeat 5em 5em,
+      url(/image/svelte-logo.svg) no-repeat calc(100% - 5em) calc(100% - 5em);
     background-size:
       8em 8em,
       8em 8em;
@@ -83,7 +89,7 @@
 
   .symbol {
     font-size: 30em;
-    color: var(--fg-1);
+    color: hsl(var(--bg-1));
   }
 
   .pattern {

@@ -1,17 +1,13 @@
 <script>
   const themes = ['margaritaville', 'retrowave', 'spaaaaace', 'halloween'];
   let selected = themes[0];
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <svelte:head>
   <link rel="stylesheet" href="/stylesheets/{selected}.css" />
 </svelte:head>
-<div class="tutorial" style="display: inline; position: fixed; top: 0%; color: coral;">
-  <p class="note">
-    <span>NOTE</span>
-    In server-side rendering (SSR) mode, contents of <code>&lt;svelte:head&gt;</code> are returned separately from the rest of your HTML.
-  </p>
-</div>
 
 <h1>Welcome to my site!</h1>
 
@@ -22,3 +18,7 @@
     <option>{theme}</option>
   {/each}
 </select>
+
+<div class="tutorial opacity-80">
+  <Tutorial />
+</div>

@@ -1,10 +1,20 @@
 import { redirect, fail } from '@sveltejs/kit';
 import { PASSPHRASE } from '$env/static/private';
+// import 'prismjs/components/prism-core';
+// import loadLanguages from 'prismjs/components/';
 
-export function load({ cookies }) {
+// export const ssr = false;
+
+export async function load({ cookies }) {
+  // console.debug('calling load({ cookies }) { ... }');
+  // loadLanguages(['bash']);
   if (cookies.get('allowed')) {
     throw redirect(307, '/part4/environment-variables/$env-static-private/welcome');
   }
+
+  // const md = import.meta.glob(`/src/routes/part4/environment-variables/env-static-private/components/Env.md`, { eager: true });
+  // console.debug(`md = ${JSON.stringify(md)}`);
+  // return { contents: md.default };
 }
 
 export const actions = {

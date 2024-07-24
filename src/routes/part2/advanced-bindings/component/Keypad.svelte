@@ -1,12 +1,12 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
 
-  export let val = '';
+  export let value = '';
 
   const dispatch = createEventDispatcher();
 
-  const select = (num: number) => () => (val += num);
-  const clear = () => (val = '');
+  const select = (num: number) => () => (value += num);
+  const clear = () => (value = '');
   const submit = () => dispatch('submit');
 </script>
 
@@ -21,9 +21,9 @@
   <button on:click={select(8)}>8</button>
   <button on:click={select(9)}>9</button>
 
-  <button disabled={!val} on:click={clear}>clear</button>
+  <button disabled={!value} on:click={clear}>clear</button>
   <button on:click={select(0)}>0</button>
-  <button disabled={!val} on:click={submit}>submit</button>
+  <button disabled={!value} on:click={submit}>submit</button>
 </div>
 
 <style>

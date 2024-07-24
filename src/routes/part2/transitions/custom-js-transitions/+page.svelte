@@ -10,7 +10,7 @@
     const text = node.textContent ?? '';
     const duration = text.length / (speed * 0.01);
     // console.debug(`text = ${text}`);
-    
+
     return {
       duration,
       tick: (t: number) => {
@@ -20,6 +20,8 @@
       }
     };
   }
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <label>
@@ -30,3 +32,7 @@
 {#if visible}
   <p transition:typewriter>The quick brown fox jumps over the lazy dog</p>
 {/if}
+
+<div class="tutorial absolute top-[25%]">
+  <Tutorial />
+</div>

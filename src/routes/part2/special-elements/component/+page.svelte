@@ -10,6 +10,8 @@
   ];
 
   let selected = options[0];
+
+  import Tutorial from './Tutorial.md';
 </script>
 
 <select bind:value={selected}>
@@ -21,5 +23,5 @@
 <svelte:component this={selected.component} />
 
 <div class="tutorial">
-  The <code>this</code> value can be any component constructor, or a falsy value — if it's falsy, no component is rendered.
+  <Tutorial />
 </div>
