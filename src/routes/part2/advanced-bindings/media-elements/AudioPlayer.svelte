@@ -121,11 +121,11 @@
   }
 
   [aria-label='pause'] {
-    background-image: url(./pause.svg);
+    background-image: url(/icons/pause.svg);
   }
 
   [aria-label='play'] {
-    background-image: url(./play.svg);
+    background-image: url(/icons/play.svg);
   }
 
   .info {
