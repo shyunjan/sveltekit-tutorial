@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://svelte.dev/" target="blank"><img src="https://svelte.dev/favicon.png" alt="Svelte Logo"/></a>
+</p>
+
 # About
 [`Svelte Tutorial`](https://learn.svelte.dev/tutorial/welcome-to-svelte)을 구현한 프로젝트
 
